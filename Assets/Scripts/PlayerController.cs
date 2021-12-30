@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private float rotationSpeed = 16f;
 
     private CharacterController controller;
+    private Animator animator;
     private PlayerInput playerInput;
 
     private InputAction moveAction;
@@ -31,15 +32,20 @@ public class PlayerController : MonoBehaviour
 
     private bool isPlayerGrounded = true;
     private bool isJumping = false;
-    private float initialJumpVelocity;                                 
+    private float initialJumpVelocity;
 
-    Vector3 jumpMovement;                                            
+    Vector3 jumpMovement;
+
+    // animator controller
+    private bool jump;
+    private bool run;
 
     private void Start() 
     {
         controller = GetComponent<CharacterController>();
         playerInput = GetComponent<PlayerInput>();
         audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
 
         moveAction = playerInput.actions["Move"];
         jumpAction = playerInput.actions["Jump"];
@@ -51,9 +57,11 @@ public class PlayerController : MonoBehaviour
     {
         detectGrounded();
         handleGravity();
-        
+        if (isPlayerGrounded) jump = false;
+        run = false;
         // get the value from the joystick
         Vector2 input = moveAction.ReadValue<Vector2>().normalized;
+        if ((input.x != 0 || input.y != 0) && !isJumping) run = true;
         
         // move the player
         Vector3 move = new Vector3(input.x, 0, input.y).normalized;
@@ -75,9 +83,12 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             jumpMovement.y = initialJumpVelocity;
             audioSource.PlayOneShot(jumpingSound); // play jump sound
+            jump = true;
         }
 
         controller.Move(jumpMovement);
+        animator.SetBool("isRun", run);
+        animator.SetBool("isJump", jump);
     }
 
 
