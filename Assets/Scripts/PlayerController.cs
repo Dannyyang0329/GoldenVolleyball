@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
         run = false;
         // get the value from the joystick
         Vector2 input = moveAction.ReadValue<Vector2>().normalized;
-        if (input.x != 0 || input.y != 0) run = true;
+        if ((input.x != 0 || input.y != 0) && !isJumping) run = true;
         
         // move the player
         Vector3 move = new Vector3(input.x, 0, input.y).normalized;
