@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private InputAction moveAction;
     private InputAction jumpAction;
+    private InputAction hitAction;
 
     private AudioSource audioSource;
 
@@ -24,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     // Jumping Variables
     [SerializeField]
-    private float maxJumpHeight = 125f;
+    private float maxJumpHeight = 10f;
     [SerializeField]
     private float maxJumpTime = 1.5f;
     [SerializeField]
@@ -39,6 +40,8 @@ public class PlayerController : MonoBehaviour
     // animator controller
     private bool jump;
     private bool run;
+    private bool hit;
+    private bool smash;
 
     private void Start() 
     {
@@ -49,6 +52,7 @@ public class PlayerController : MonoBehaviour
 
         moveAction = playerInput.actions["Move"];
         jumpAction = playerInput.actions["Jump"];
+        hitAction = playerInput.actions["Hit"];
 
         setupJumpVariables();
     }
@@ -59,6 +63,7 @@ public class PlayerController : MonoBehaviour
         handleGravity();
         if (isPlayerGrounded) jump = false;
         run = false;
+        smash = false;
         // get the value from the joystick
         Vector2 input = moveAction.ReadValue<Vector2>().normalized;
         if ((input.x != 0 || input.y != 0) && !isJumping) run = true;
@@ -86,9 +91,16 @@ public class PlayerController : MonoBehaviour
             jump = true;
         }
 
+        // press hit button
+        if (hitAction.triggered&&isJumping)
+        {
+            smash = true;
+        }
+
         controller.Move(jumpMovement);
         animator.SetBool("isRun", run);
         animator.SetBool("isJump", jump);
+        animator.SetBool("isSmash", smash);
     }
 
 

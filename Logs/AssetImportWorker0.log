@@ -1,724 +1,2295 @@
+Unity Editor version:    2020.3.17f1 (a4537701e4ab)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.1 (Build 21C52)
+Darwin version:          21.2.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.17f1 (a4537701e4ab) revision 10769271'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Enterprise; OS build 19041.1415; Version 2004; 64bit' Language: 'zh' Physical Memory: 28566 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+Pro License: NO
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Unity.exe
+/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/danny/Desktop/Game/GoldenVolleyball
+/Users/lijiayou/Documents/GitHub/GoldenVolleyball
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-8167
-Successfully changed project path to: C:/Users/danny/Desktop/Game/GoldenVolleyball
-C:/Users/danny/Desktop/Game/GoldenVolleyball
+49935
+Successfully changed project path to: /Users/lijiayou/Documents/GitHub/GoldenVolleyball
+/Users/lijiayou/Documents/GitHub/GoldenVolleyball
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 125.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 118.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/danny/Desktop/Game/GoldenVolleyball/Assets
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/lijiayou/Documents/GitHub/GoldenVolleyball/Assets
 GfxDevice: creating device client; threaded=0
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon(TM) Graphics (ID=0x1636)
-    Vendor:   
-    VRAM:     14283 MB
-    Driver:   30.0.13025.5005
+2022-01-01 00:18:17.432 Unity[3460:64099] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics (low power)
+2022-01-01 00:18:17.432 Unity[3460:64099] Metal devices available: 1
+2022-01-01 00:18:17.432 Unity[3460:64099] 0: Intel(R) Iris(TM) Plus Graphics (low power)
+2022-01-01 00:18:17.433 Unity[3460:64099] Using device Intel(R) Iris(TM) Plus Graphics (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010924 seconds.
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 118.78 ms, found 2 plugins.
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000615 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 132.01 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.943 seconds
+- Completed reload, in  2.997 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1944ms)
-		BeginReloadAssembly (140ms)
+	ReloadAssembly (2997ms)
+		BeginReloadAssembly (47ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (570ms)
-			LoadAssemblies (130ms)
+		EndReloadAssembly (611ms)
+			LoadAssemblies (46ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (158ms)
+			SetupTypeCache (180ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (253ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (335ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (119ms)
-				BeforeProcessingInitializeOnLoad (18ms)
-				ProcessInitializeOnLoadAttributes (78ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (132ms)
+				BeforeProcessingInitializeOnLoad (27ms)
+				ProcessInitializeOnLoadAttributes (137ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.025869 seconds.
+Registered in 0.003224 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 117.52 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 111.19 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.642 seconds
+- Completed reload, in  1.347 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1643ms)
-		BeginReloadAssembly (230ms)
+	ReloadAssembly (1348ms)
+		BeginReloadAssembly (141ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (1294ms)
-			LoadAssemblies (199ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1142ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (349ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (586ms)
+			SetupTypeCache (379ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (484ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (118ms)
-				BeforeProcessingInitializeOnLoad (145ms)
-				ProcessInitializeOnLoadAttributes (267ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (37ms)
+				RefreshPlugins (111ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (278ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
+Validating Project structure ... 0.070898 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.099280 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Initializing Unity extensions:
+2022-01-01 00:18:22.803 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018a38e0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-01-01 00:18:22.807 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018b1420 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2122 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 118.4 MB.
-System memory in use after: 118.5 MB.
+Unloading 2123 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.9 MB.
+System memory in use after: 213.1 MB.
 
-Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2575.
-Total: 3.545100 ms (FindLiveObjects: 0.235100 ms CreateObjectMapping: 0.058100 ms MarkObjects: 3.169100 ms  DeleteObjects: 0.081300 ms)
+Unloading 155 unused Assets to reduce memory usage. Loaded Objects now: 2591.
+Total: 3.636843 ms (FindLiveObjects: 0.294242 ms CreateObjectMapping: 0.094207 ms MarkObjects: 2.708211 ms  DeleteObjects: 0.538614 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Mario.prefab
-  artifactKey: Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Mario.prefab using Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d904937aad2db97dd1a084fe66196dc') in 0.192240 seconds 
-  Import took 0.198054 seconds .
+  path: Assets/Sound/BGM_2_famipop4.mp3
+  artifactKey: Guid(6adde404a55a99a47a9b1cbe3852c294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/BGM_2_famipop4.mp3 using Guid(6adde404a55a99a47a9b1cbe3852c294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ade4e26c272cf5776d8edceca2eeb7') in 1.521638 seconds 
+  Import took 1.526423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003565 seconds.
+  path: Assets/Sound/Jumping.mp3
+  artifactKey: Guid(c21c0aa4f1065d54cbd88a4b3afa70ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Jumping.mp3 using Guid(c21c0aa4f1065d54cbd88a4b3afa70ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b2db51e5231b6ab9b0061304d679f8a') in 0.011518 seconds 
+  Import took 0.015622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Scripts/InputActions.inputactions
+  artifactKey: Guid(80e519b52a4d92148b47762223e47bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/InputActions.inputactions using Guid(80e519b52a4d92148b47762223e47bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2890694a878e24a12c389bd2ccdd1813') in 0.140021 seconds 
+  Import took 0.144101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.246606 seconds.
+  path: Assets/Scripts/InputActions.cs
+  artifactKey: Guid(63e6626989ada4b40a288a9696a5fa7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/InputActions.cs using Guid(63e6626989ada4b40a288a9696a5fa7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '483bd2228cda9e7eb308544c2f55233f') in 0.167066 seconds 
+  Import took 0.171610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 201.880826 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e6bf9e4ac0d9c0edf95e852ac4a4f5') in 0.003973 seconds 
+  Import took 0.009911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002806 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e6bf9e4ac0d9c0edf95e852ac4a4f5') in 0.004419 seconds 
+  Import took 0.010658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.330577 seconds.
+  path: Assets/Scripts/NetworkingManager.cs
+  artifactKey: Guid(249c7324e16eda04881d7ac7ca89aee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NetworkingManager.cs using Guid(249c7324e16eda04881d7ac7ca89aee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82bb9065bb6c911c3e0785d7c1d4620b') in 0.002437 seconds 
+  Import took 0.009080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001070 seconds.
+  path: Assets/Scripts/NetworkingManager.cs
+  artifactKey: Guid(249c7324e16eda04881d7ac7ca89aee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NetworkingManager.cs using Guid(249c7324e16eda04881d7ac7ca89aee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82bb9065bb6c911c3e0785d7c1d4620b') in 0.003544 seconds 
+  Import took 0.010168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.369627 seconds.
+  path: Assets/Scripts/MainMenuController.cs
+  artifactKey: Guid(5dc2c2c27587ccb45a3b1bfe44cf8ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MainMenuController.cs using Guid(5dc2c2c27587ccb45a3b1bfe44cf8ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe009f279821d9f6b83d35a1623ed451') in 0.002416 seconds 
+  Import took 0.008097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.957093 seconds.
+  path: Assets/Scripts/AudioManager.cs
+  artifactKey: Guid(236741ff08852ef4a8958da1ecd79566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AudioManager.cs using Guid(236741ff08852ef4a8958da1ecd79566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b1f13d9f5ff61c67b3c59c32128598') in 0.002617 seconds 
+  Import took 0.009100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.499915 seconds.
+  path: Assets/Scripts/InputActions.inputactions
+  artifactKey: Guid(80e519b52a4d92148b47762223e47bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/InputActions.inputactions using Guid(80e519b52a4d92148b47762223e47bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0824e63ea922c02045e848351533b1c') in 0.005513 seconds 
+  Import took 0.012863 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.023575 seconds.
+Registered in 0.003091 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 00:23:48.482 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018f8620 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  1.466 seconds
+- Completed reload, in  1.413 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1466ms)
-		BeginReloadAssembly (214ms)
+	ReloadAssembly (1414ms)
+		BeginReloadAssembly (117ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (1136ms)
-			LoadAssemblies (199ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1223ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (329ms)
+			SetupTypeCache (403ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (455ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (140ms)
-				ProcessInitializeOnLoadAttributes (258ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (39ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2104 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.5 MB.
-System memory in use after: 133.6 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2585.
-Total: 3.466900 ms (FindLiveObjects: 0.236600 ms CreateObjectMapping: 0.057400 ms MarkObjects: 3.145800 ms  DeleteObjects: 0.025500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 98.856832 seconds.
-  path: Assets/Prefabs/Mario.prefab
-  artifactKey: Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Mario.prefab using Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3075b1fa016766096638f13c94b4f74') in 0.131382 seconds 
-  Import took 0.137431 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.023730 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.528 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1529ms)
-		BeginReloadAssembly (206ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1207ms)
-			LoadAssemblies (199ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (336ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (475ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (143ms)
-				ProcessInitializeOnLoadAttributes (272ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (39ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2104 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.6 MB.
-System memory in use after: 133.7 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2588.
-Total: 3.508000 ms (FindLiveObjects: 0.228900 ms CreateObjectMapping: 0.055000 ms MarkObjects: 3.193100 ms  DeleteObjects: 0.029200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 266.834260 seconds.
-  path: Assets/Prefabs/Mario.prefab
-  artifactKey: Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Mario.prefab using Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e29d6b1a38e6aa75513ba445788b6cc') in 0.120311 seconds 
-  Import took 0.126090 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.024420 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.669 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1670ms)
-		BeginReloadAssembly (240ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1309ms)
-			LoadAssemblies (217ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (345ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (490ms)
+			RebuildScriptCaches (87ms)
+			SetupLoadedEditorAssemblies (459ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (147ms)
-				ProcessInitializeOnLoadAttributes (279ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (41ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2104 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.7 MB.
-System memory in use after: 133.8 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2591.
-Total: 3.954300 ms (FindLiveObjects: 0.268800 ms CreateObjectMapping: 0.057600 ms MarkObjects: 3.596100 ms  DeleteObjects: 0.030400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.024960 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.627 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1628ms)
-		BeginReloadAssembly (217ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (1287ms)
-			LoadAssemblies (216ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (335ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (472ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (144ms)
-				ProcessInitializeOnLoadAttributes (268ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (40ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.27 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2104 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.7 MB.
-System memory in use after: 133.8 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2593.
-Total: 3.395700 ms (FindLiveObjects: 0.239400 ms CreateObjectMapping: 0.056800 ms MarkObjects: 3.072200 ms  DeleteObjects: 0.025500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 190.546008 seconds.
-  path: Assets/Scripts/NetworkingManager.cs
-  artifactKey: Guid(249c7324e16eda04881d7ac7ca89aee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/NetworkingManager.cs using Guid(249c7324e16eda04881d7ac7ca89aee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7ae697cc558b4142c5651ed6ab9647') in 0.013126 seconds 
-  Import took 0.017588 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.023131 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.638 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1639ms)
-		BeginReloadAssembly (210ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1309ms)
-			LoadAssemblies (205ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (331ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (463ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (141ms)
-				ProcessInitializeOnLoadAttributes (261ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (41ms)
+				ProcessInitializeOnLoadAttributes (295ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2104 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.7 MB.
-System memory in use after: 133.9 MB.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 223.4 MB.
+System memory in use after: 223.5 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2595.
-Total: 3.388100 ms (FindLiveObjects: 0.228700 ms CreateObjectMapping: 0.057700 ms MarkObjects: 3.075800 ms  DeleteObjects: 0.024100 ms)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2602.
+Total: 3.144240 ms (FindLiveObjects: 0.184109 ms CreateObjectMapping: 0.066069 ms MarkObjects: 2.860134 ms  DeleteObjects: 0.032212 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.023648 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.630 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1630ms)
-		BeginReloadAssembly (191ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (1323ms)
-			LoadAssemblies (190ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (330ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (455ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (139ms)
-				ProcessInitializeOnLoadAttributes (259ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (38ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2104 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.7 MB.
-System memory in use after: 133.9 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2597.
-Total: 3.323800 ms (FindLiveObjects: 0.233000 ms CreateObjectMapping: 0.054100 ms MarkObjects: 3.008000 ms  DeleteObjects: 0.027000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 262.874539 seconds.
+  Time since last request: 35.067302 seconds.
+  path: Assets/Scripts/Sound.cs
+  artifactKey: Guid(48d156b2aba1f9b4fb200643373df13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Sound.cs using Guid(48d156b2aba1f9b4fb200643373df13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4978e8f937dda9b2237ae26534bf407b') in 0.008312 seconds 
+  Import took 0.014714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1138.349024 seconds.
+  path: Assets/Animation/MarioAnimation.controller
+  artifactKey: Guid(022a98013eb7748bca010fa8497c9a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/MarioAnimation.controller using Guid(022a98013eb7748bca010fa8497c9a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a099b8aafaf32cf958000910a833561') in 0.118272 seconds 
+  Import took 0.123612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.450173 seconds.
+  path: Assets/Materials/field_mat.mat
+  artifactKey: Guid(62388d8c3f2c2e048b5f70fa92cd8023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/field_mat.mat using Guid(62388d8c3f2c2e048b5f70fa92cd8023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7fde48b5f345825ffd83584256a8936') in 0.309213 seconds 
+  Import took 0.314515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003375 seconds.
+  path: Assets/Materials/pole_mat.mat
+  artifactKey: Guid(772835513913a964bb2fab00f04bbe7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/pole_mat.mat using Guid(772835513913a964bb2fab00f04bbe7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1aa8f7a64bba2422c2348ac70824adc') in 0.013894 seconds 
+  Import took 0.019164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/Materials/player_mat.mat
+  artifactKey: Guid(b19dce733a6cab644921be7ec6af04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/player_mat.mat using Guid(b19dce733a6cab644921be7ec6af04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fd4afdc8450e0937d4043457d93df5') in 0.021638 seconds 
+  Import took 0.027582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: Assets/Materials/flag_mat.mat
+  artifactKey: Guid(f036e56ead4b2294bb20189cbac41884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/flag_mat.mat using Guid(f036e56ead4b2294bb20189cbac41884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40ccd5d634b9371abf4d9a7b6731b8b') in 0.019254 seconds 
+  Import took 0.024410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Materials/ground_mat.mat
+  artifactKey: Guid(0ff7e1638d5cbc140b9897e016466a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/ground_mat.mat using Guid(0ff7e1638d5cbc140b9897e016466a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00aa5ea48d51ca5227492d4feec0fcae') in 0.015104 seconds 
+  Import took 0.019162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.498398 seconds.
   path: Assets/Prefabs/Mario.prefab
   artifactKey: Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Mario.prefab using Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a5fba96fecc0295a0624fc64332ee66') in 0.124108 seconds 
-  Import took 0.130091 seconds .
+Start importing Assets/Prefabs/Mario.prefab using Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a5d571823a03694229e74d718814c7') in 0.299678 seconds 
+  Import took 0.306379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003339 seconds.
+  path: Assets/Prefabs/VolleyballNet.prefab
+  artifactKey: Guid(60f00f9b917704995bf06e2fd3c2c543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/VolleyballNet.prefab using Guid(60f00f9b917704995bf06e2fd3c2c543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0648419e5bce17ef477dfdcf8dcfe88d') in 0.104106 seconds 
+  Import took 0.107944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.692488 seconds.
+  path: Assets/UI/bk.png
+  artifactKey: Guid(c9dfaa75c880d98408f036a4ae294a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/bk.png using Guid(c9dfaa75c880d98408f036a4ae294a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b6592410fae0d5ff5b4ed5bace7696') in 0.869567 seconds 
+  Import took 0.874773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003243 seconds.
+  path: Assets/UI/menubk2.jpg
+  artifactKey: Guid(ee861f2b566f69442a509f2f9a5b3cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/menubk2.jpg using Guid(ee861f2b566f69442a509f2f9a5b3cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9424f64a3552deb8b7374dfb610e92b3') in 0.822356 seconds 
+  Import took 0.825936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003820 seconds.
+  path: Assets/UI/GoldenVolleyballLogo v2.png
+  artifactKey: Guid(7dafb6c8e738ee7419e7fbfb95d6e317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/GoldenVolleyballLogo v2.png using Guid(7dafb6c8e738ee7419e7fbfb95d6e317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e395310a7abfb80e803d27df4f66fdfd') in 0.029343 seconds 
+  Import took 0.035640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000482 seconds.
+  path: Assets/UI/menubk.jpg
+  artifactKey: Guid(717dd5c2dd1ab5d43a2716e210b7bbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/menubk.jpg using Guid(717dd5c2dd1ab5d43a2716e210b7bbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b8c93469b6fda3741a3092d9fd33b1') in 0.024756 seconds 
+  Import took 0.031457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.439290 seconds.
+  path: Assets/Assets/stadium.fbx
+  artifactKey: Guid(b6bace2a76c029e40afe37d561abbf3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/stadium.fbx using Guid(b6bace2a76c029e40afe37d561abbf3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c760e4f7d94aa24e4f6ceedc9814f8ab') in 3.461240 seconds 
+  Import took 3.471511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.064395 seconds.
+  path: Assets/Assets/HelloMarioAssets/HelloMarioAssets.png
+  artifactKey: Guid(6ad20b3dc4be9de4392f50c3c6c5540c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/HelloMarioAssets.png using Guid(6ad20b3dc4be9de4392f50c3c6c5540c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23f0109ebbb61a98de63c8a39cf87d3d') in 0.022498 seconds 
+  Import took 0.026275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Assets/HelloMarioAssets
+  artifactKey: Guid(f36e1b3953b4b4c48ab430ee174aa858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets using Guid(f36e1b3953b4b4c48ab430ee174aa858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d87de7456b3ef311c2e004a6584fb52') in 0.001115 seconds 
+  Import took 0.005191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.891954 seconds.
+  path: Assets/Assets/HelloMarioAssets/Materials
+  artifactKey: Guid(33d0f3e51e325d5498d0945d6dc99948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Materials using Guid(33d0f3e51e325d5498d0945d6dc99948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4314f5b0d3a834c30d87649ad51845bc') in 0.002364 seconds 
+  Import took 0.009006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.541281 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player
+  artifactKey: Guid(386d0ac5177d7f7499157a0af7d6efe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player using Guid(386d0ac5177d7f7499157a0af7d6efe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4f06187997bd9cc96cf71094abad92') in 0.002141 seconds 
+  Import took 0.009472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.353882 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim
+  artifactKey: Guid(56a3debac8d9de541ac2bc96ad4bda08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim using Guid(56a3debac8d9de541ac2bc96ad4bda08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3a6b19182e1ac4b46d32aef3daa89ef') in 0.002425 seconds 
+  Import took 0.009281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084739 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/BlockPunchedJump.fbx
+  artifactKey: Guid(64a14441cff022542baa4831b21fd2f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/BlockPunchedJump.fbx using Guid(64a14441cff022542baa4831b21fd2f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '182117ae18e333e5376de6ecffe28ac9') in 0.011091 seconds 
+  Import took 0.015311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CarryUpThrow.fbx
+  artifactKey: Guid(4fdc5e8d65f0fc2459d4c20945bbe0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CarryUpThrow.fbx using Guid(4fdc5e8d65f0fc2459d4c20945bbe0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8f08572c5000a86376eeb458a7d8d1') in 0.011938 seconds 
+  Import took 0.015512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectBattleWait.fbx
+  artifactKey: Guid(d8f6731b1a39eba45a9b40af39a6eacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectBattleWait.fbx using Guid(d8f6731b1a39eba45a9b40af39a6eacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b910af59ef6313c89c89e6de5918da') in 0.013810 seconds 
+  Import took 0.018706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CarryFront.fbx
+  artifactKey: Guid(c9b74b1e72cd714439119938fbd8968d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CarryFront.fbx using Guid(c9b74b1e72cd714439119938fbd8968d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe6334b23e5b99230c15b502b2f32d3') in 0.011763 seconds 
+  Import took 0.018360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CarryUp.fbx
+  artifactKey: Guid(9b78b98e0d6f66e4f9a3aaa2d55dfe55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CarryUp.fbx using Guid(9b78b98e0d6f66e4f9a3aaa2d55dfe55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08c0869ee02ff1c5d342bc6635914544') in 0.009724 seconds 
+  Import took 0.015456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/Brake.fbx
+  artifactKey: Guid(0dd1cd8d30e24e648987bd547d4012af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/Brake.fbx using Guid(0dd1cd8d30e24e648987bd547d4012af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a28fb0dd067ba1cd05c99098ba0655') in 0.010395 seconds 
+  Import took 0.015739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/BodyAttackLand.fbx
+  artifactKey: Guid(9614629a16c603c4eb5b2b21449c3707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/BodyAttackLand.fbx using Guid(9614629a16c603c4eb5b2b21449c3707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a99b45a8fc4fb487a865cd5be5217f2') in 0.011967 seconds 
+  Import took 0.018683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/BubbleWait.fbx
+  artifactKey: Guid(24a7db2d4a4951e47bb2894a8f7e5671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/BubbleWait.fbx using Guid(24a7db2d4a4951e47bb2894a8f7e5671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a9cdf87ec220622354ce4e03e6d879') in 0.009790 seconds 
+  Import took 0.015269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000559 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/Catch.fbx
+  artifactKey: Guid(4a5b632edee93c447b87b3e00fd91fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/Catch.fbx using Guid(4a5b632edee93c447b87b3e00fd91fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d7800759886e6715cabe0d1c6337b9') in 0.011553 seconds 
+  Import took 0.016245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectOpenLock.fbx
+  artifactKey: Guid(b9f608b66b40ad24c882d7234c16b39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectOpenLock.fbx using Guid(b9f608b66b40ad24c882d7234c16b39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68df1958b36690de15dc9f1c1c3d2c3') in 0.012625 seconds 
+  Import took 0.018312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000544 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectDash.fbx
+  artifactKey: Guid(62fb3767b099d1e48b6710ae57c40596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectDash.fbx using Guid(62fb3767b099d1e48b6710ae57c40596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0437aa23825734d8c16fc8b847e9b0f2') in 0.011050 seconds 
+  Import took 0.016810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectJump.fbx
+  artifactKey: Guid(27b877579dc32d044a94e01b1a967ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectJump.fbx using Guid(27b877579dc32d044a94e01b1a967ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9918d121e3c97f72a7413ea1bd882dfe') in 0.010632 seconds 
+  Import took 0.015903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000535 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectLeave.fbx
+  artifactKey: Guid(bf661f5947708c34993748e259e087d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectLeave.fbx using Guid(bf661f5947708c34993748e259e087d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06669e967fd1afc7b2f0153f767fc827') in 0.009931 seconds 
+  Import took 0.016266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CarryFrontThrow.fbx
+  artifactKey: Guid(4d83ca7925f0d1c48b73e99a7a1b006c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CarryFrontThrow.fbx using Guid(4d83ca7925f0d1c48b73e99a7a1b006c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35af1188533cae878ca2a11c7031adf4') in 0.013945 seconds 
+  Import took 0.019177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CannonFlyLand.fbx
+  artifactKey: Guid(f99139bd94970324281b174459993f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CannonFlyLand.fbx using Guid(f99139bd94970324281b174459993f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af6f7da79479b5b98840c2de228baba') in 0.014267 seconds 
+  Import took 0.018008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/ClimeTreeHandStandEnd.fbx
+  artifactKey: Guid(7f7678dfb34b3da479e705a646811d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/ClimeTreeHandStandEnd.fbx using Guid(7f7678dfb34b3da479e705a646811d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2983634fa13d5e6dcbeaeec7280feaf6') in 0.012242 seconds 
+  Import took 0.015854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/BodyAttack.fbx
+  artifactKey: Guid(1978b008c518b5d42862b64b797f17b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/BodyAttack.fbx using Guid(1978b008c518b5d42862b64b797f17b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64059657ae31d9edc1ef12cbde83f8be') in 0.013150 seconds 
+  Import took 0.017674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000486 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/BodyAttackReady.fbx
+  artifactKey: Guid(7cf5617c919802d48a9d433ee97861df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/BodyAttackReady.fbx using Guid(7cf5617c919802d48a9d433ee97861df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f83e285cc3532e87afa96a39dbbc975') in 0.013089 seconds 
+  Import took 0.016985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectAppear.fbx
+  artifactKey: Guid(de28417cae94b264f8ec9cd60c5d3198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectAppear.fbx using Guid(de28417cae94b264f8ec9cd60c5d3198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c428dd7b90c3d8e70dcab061ffb815') in 0.015091 seconds 
+  Import took 0.019329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/BubbleStart.fbx
+  artifactKey: Guid(f635679eb9c2b5443982dd395121b0f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/BubbleStart.fbx using Guid(f635679eb9c2b5443982dd395121b0f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad8042c2b44eb0fa90a6d844fa79fdf') in 0.015844 seconds 
+  Import took 0.021605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000512 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectLand.fbx
+  artifactKey: Guid(25fb4f47d8344ed42a6c85e0e9c5d435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectLand.fbx using Guid(25fb4f47d8344ed42a6c85e0e9c5d435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0c1b8b554c6119ea210ae3e72c620ef') in 0.013162 seconds 
+  Import took 0.018230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectOpenRoad.fbx
+  artifactKey: Guid(5e79db44c1c853141b17a95de5b3963a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectOpenRoad.fbx using Guid(5e79db44c1c853141b17a95de5b3963a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc4dbdd1cccbd76a885e2ba09af34a1') in 0.010997 seconds 
+  Import took 0.016648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000482 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectOpenGateKeeper.fbx
+  artifactKey: Guid(15057d22427919e4f9961d326bafd05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectOpenGateKeeper.fbx using Guid(15057d22427919e4f9961d326bafd05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd57b2a397d5774ccdf87a335d828c49a') in 0.014246 seconds 
+  Import took 0.019317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/BubbleJump.fbx
+  artifactKey: Guid(e242737e7e34128409a400e157471514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/BubbleJump.fbx using Guid(e242737e7e34128409a400e157471514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73d8cf549a2d6ba5fa3617e97c8fe5d') in 0.014787 seconds 
+  Import took 0.018807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CannonFly.fbx
+  artifactKey: Guid(2d5e2c44ccefa694381040c328dd8e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CannonFly.fbx using Guid(2d5e2c44ccefa694381040c328dd8e15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c01e267f2e19f3b2c0babba2dcbbee86') in 0.015204 seconds 
+  Import took 0.019330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000442 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/Boomerang.fbx
+  artifactKey: Guid(1ab9f32044d75b141b521d5edadfa6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/Boomerang.fbx using Guid(1ab9f32044d75b141b521d5edadfa6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbdb93f2065da5ca95459e7146f56bc') in 0.012968 seconds 
+  Import took 0.018551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/Carry.fbx
+  artifactKey: Guid(36e21834383ca4d49ab04d59665e6090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/Carry.fbx using Guid(36e21834383ca4d49ab04d59665e6090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2398d2997fa7d3b4760c17f74335cbf3') in 0.014164 seconds 
+  Import took 0.020970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/BubbleJump.fbx
+  artifactKey: Guid(e242737e7e34128409a400e157471514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/BubbleJump.fbx using Guid(e242737e7e34128409a400e157471514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73d8cf549a2d6ba5fa3617e97c8fe5d') in 0.010509 seconds 
+  Import took 0.016181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CarryUpStart.fbx
+  artifactKey: Guid(41a3eca6d83d4f14c905840a4310e930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CarryUpStart.fbx using Guid(41a3eca6d83d4f14c905840a4310e930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab8a38aaff17b3a7cf917b4a7f1200cd') in 0.013405 seconds 
+  Import took 0.017855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CarryFrontStart.fbx
+  artifactKey: Guid(5b605adc4acc7fe4383d10c1020f65ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CarryFrontStart.fbx using Guid(5b605adc4acc7fe4383d10c1020f65ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8deaf1559219e4c1ef3de0470e576ac9') in 0.013543 seconds 
+  Import took 0.018139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006621 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/Carry.fbx
+  artifactKey: Guid(36e21834383ca4d49ab04d59665e6090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/Carry.fbx using Guid(36e21834383ca4d49ab04d59665e6090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2398d2997fa7d3b4760c17f74335cbf3') in 0.008407 seconds 
+  Import took 0.014289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.539987 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail
+  artifactKey: Guid(6add3d5dd68d18648a91d75cc462857d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail using Guid(6add3d5dd68d18648a91d75cc462857d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e39bbe75211e2383468a06a8dc4efc') in 0.005224 seconds 
+  Import took 0.012594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059103 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/BlockPunchedJump.fbx
+  artifactKey: Guid(282c4d7df0bee6e499fa17c3a26460e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/BlockPunchedJump.fbx using Guid(282c4d7df0bee6e499fa17c3a26460e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a33a5738489459cf08d0044eb7cfd22') in 0.009532 seconds 
+  Import took 0.014452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/FallSlowly.fbx
+  artifactKey: Guid(16b11c1959ca31049ab0102393e69794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/FallSlowly.fbx using Guid(16b11c1959ca31049ab0102393e69794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edacafbdcfa3eb97ab6511edfee49148') in 0.011621 seconds 
+  Import took 0.015748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/Fall.fbx
+  artifactKey: Guid(b181f45ef7a0f9a4f90d0ce4a9d61a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/Fall.fbx using Guid(b181f45ef7a0f9a4f90d0ce4a9d61a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144e3328eae8b31001871c19fcba45d1') in 0.011384 seconds 
+  Import took 0.017116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/DokanOut.fbx
+  artifactKey: Guid(c48ff073338057c4287b1e8e940bbbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/DokanOut.fbx using Guid(c48ff073338057c4287b1e8e940bbbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ea317da324a2268e1f478772f80d95') in 0.012709 seconds 
+  Import took 0.016669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/DokanJumpReverse.fbx
+  artifactKey: Guid(150dc69844b4e2b4686cbbeba54fe2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/DokanJumpReverse.fbx using Guid(150dc69844b4e2b4686cbbeba54fe2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ec6a3b8426faa49fe13103ddb0eb2a') in 0.009801 seconds 
+  Import took 0.014584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000561 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPoleFall.fbx
+  artifactKey: Guid(c37d8716bce48b247b220f8390da7b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPoleFall.fbx using Guid(c37d8716bce48b247b220f8390da7b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '752c6fdf0cebcbd932ec3454aa693d06') in 0.010017 seconds 
+  Import took 0.014924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectPush.fbx
+  artifactKey: Guid(2a514b2add99d5641907e86f5172a555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectPush.fbx using Guid(2a514b2add99d5641907e86f5172a555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ec7eb1185410049a8e2985b06f1e91') in 0.008324 seconds 
+  Import took 0.012180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectRun.fbx
+  artifactKey: Guid(c901eaaa2bee2504180cc8402f49a3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectRun.fbx using Guid(c901eaaa2bee2504180cc8402f49a3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd185a53b579c2bedb163a78bd4659015') in 0.012726 seconds 
+  Import took 0.016762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000489 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectLand.fbx
+  artifactKey: Guid(4dd5f4bf6f1f98e46a91eb68156208ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectLand.fbx using Guid(4dd5f4bf6f1f98e46a91eb68156208ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2796b8c0ccc5fa8fffd37325f7328050') in 0.009779 seconds 
+  Import took 0.015142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/BubbleWait.fbx
+  artifactKey: Guid(5fe88f04ee63e6745a1a36b7d9c650c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/BubbleWait.fbx using Guid(5fe88f04ee63e6745a1a36b7d9c650c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6e87719ee48167ea204cb8874a4222') in 0.011211 seconds 
+  Import took 0.015363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/DieOver.fbx
+  artifactKey: Guid(e1d027342360e044bb2033e399b0d768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/DieOver.fbx using Guid(e1d027342360e044bb2033e399b0d768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84637aa7f38b0e674e1b40e78e025aee') in 0.010254 seconds 
+  Import took 0.013823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/CarryFrontThrow.fbx
+  artifactKey: Guid(4fe207694b5bc80418c7892716bbe344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/CarryFrontThrow.fbx using Guid(4fe207694b5bc80418c7892716bbe344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b75ed1687121941f8310d3ad6275da3') in 0.011601 seconds 
+  Import took 0.015835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/BubbleStart.fbx
+  artifactKey: Guid(e3c3da6586a69cf40b186b5e8c77c8e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/BubbleStart.fbx using Guid(e3c3da6586a69cf40b186b5e8c77c8e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe4077f936bae4d24bdf2433fff715a') in 0.010923 seconds 
+  Import took 0.014801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectWait.fbx
+  artifactKey: Guid(4632b344829c637458d62e10255262d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectWait.fbx using Guid(4632b344829c637458d62e10255262d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7317629176605c380ea8e797faa13fe') in 0.012831 seconds 
+  Import took 0.016742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/CannonFlyLand.fbx
+  artifactKey: Guid(eb58edb3abce2d34b87fb326af37e528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/CannonFlyLand.fbx using Guid(eb58edb3abce2d34b87fb326af37e528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af944a097a868d080c0eb0a551de923') in 0.009837 seconds 
+  Import took 0.014545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPoleJump.fbx
+  artifactKey: Guid(ad4e998c8154e0447a382b31a36f1f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPoleJump.fbx using Guid(ad4e998c8154e0447a382b31a36f1f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc18dd36920eea24998f24d940eba603') in 0.009313 seconds 
+  Import took 0.014170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/DashSuperStar.fbx
+  artifactKey: Guid(cebf63bedcf5dce4ca9fad53a035072c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/DashSuperStar.fbx using Guid(cebf63bedcf5dce4ca9fad53a035072c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec31f21e7c364da655ead0d4c4d872b3') in 0.012763 seconds 
+  Import took 0.018217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectAppear.fbx
+  artifactKey: Guid(27c8070291c438b4d9a26f3f409c8c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectAppear.fbx using Guid(27c8070291c438b4d9a26f3f409c8c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a4054d940ab254c397a0a34a8667eaa') in 0.010649 seconds 
+  Import took 0.016231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPose.fbx
+  artifactKey: Guid(13a41305f88e6b84e90719fb80752293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPose.fbx using Guid(13a41305f88e6b84e90719fb80752293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '276ac97d9c501d3774d09333a66d27a6') in 0.010061 seconds 
+  Import took 0.015513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000551 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectJump.fbx
+  artifactKey: Guid(d785dec37d44531489035d539333525d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectJump.fbx using Guid(d785dec37d44531489035d539333525d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e65e5f7a856166963a7ba158f4f9d7') in 0.009710 seconds 
+  Import took 0.014252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000603 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/DashStart.fbx
+  artifactKey: Guid(df47b0c97fb5b684881a60d5142192b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/DashStart.fbx using Guid(df47b0c97fb5b684881a60d5142192b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b21680e77c44e91631c6895da6ac3ee') in 0.011135 seconds 
+  Import took 0.015708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectDash.fbx
+  artifactKey: Guid(a5b4efa9330e3bf4fbca356ed322287c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/CourseSelectDash.fbx using Guid(a5b4efa9330e3bf4fbca356ed322287c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3fe63fb52b8deb1b6e6a6aea2a1f6a6') in 0.011379 seconds 
+  Import took 0.017892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/Dash.fbx
+  artifactKey: Guid(df8ee48e7328b894c8948a89876a93c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/Dash.fbx using Guid(df8ee48e7328b894c8948a89876a93c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909e77dad1fd3409a543cfccb3f463c4') in 0.011268 seconds 
+  Import took 0.015886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPoleFallEnd.fbx
+  artifactKey: Guid(e70e701cf41f65248ab64f3bf81b78ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPoleFallEnd.fbx using Guid(e70e701cf41f65248ab64f3bf81b78ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12838a4d0f3c84f1431e3bef44112a0f') in 0.013966 seconds 
+  Import took 0.018686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPoseLast.fbx
+  artifactKey: Guid(695220fc2ff24b34891d0ccc5c31fff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPoseLast.fbx using Guid(695220fc2ff24b34891d0ccc5c31fff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7759f0ce5c54449852c17fbd3257ab') in 0.012866 seconds 
+  Import took 0.017179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/Brake.fbx
+  artifactKey: Guid(20c5201162a7d7740a347f8931454b4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/Brake.fbx using Guid(20c5201162a7d7740a347f8931454b4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309638dcfb38c41f7761f4deb7cb41e8') in 0.011898 seconds 
+  Import took 0.017119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/DashFast.fbx
+  artifactKey: Guid(bd28c1c41def84d458653e7bdec1d116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/DashFast.fbx using Guid(bd28c1c41def84d458653e7bdec1d116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811ee18184da691385d51037cae6130a') in 0.010523 seconds 
+  Import took 0.015212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/DokanJump.fbx
+  artifactKey: Guid(5f2d0c2c093065446af34c5593b37ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/DokanJump.fbx using Guid(5f2d0c2c093065446af34c5593b37ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf92cf41713ed4d1bc4e4634a9963d8') in 0.013358 seconds 
+  Import took 0.018409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPoleLand.fbx
+  artifactKey: Guid(5c97b33cb29f0dc46bd00c9247fbac4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/AnimTail/GoalPoleLand.fbx using Guid(5c97b33cb29f0dc46bd00c9247fbac4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03102931b25203b73c948012526f8463') in 0.010568 seconds 
+  Import took 0.014460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.209464 seconds.
+  path: Assets/Assets/HelloMarioAssets/Item/Mushroom/1up.prefab
+  artifactKey: Guid(4515657da09a932449321f0e82bbd324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Item/Mushroom/1up.prefab using Guid(4515657da09a932449321f0e82bbd324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0f24246b7bd3603177411bb220752d') in 0.019572 seconds 
+  Import took 0.023270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Assets/HelloMarioAssets/NPC/Toad/Anim/Afraid.fbx
+  artifactKey: Guid(07b1e2b127880dc419761d89ca932524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/NPC/Toad/Anim/Afraid.fbx using Guid(07b1e2b127880dc419761d89ca932524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fd180a0423912a605bc87e0f3eb1d14') in 0.013094 seconds 
+  Import took 0.016797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Assets/HelloMarioAssets/Item/Checkpoint/Anim/After.fbx
+  artifactKey: Guid(8a491e024a23b0947ad5de6b805edb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Item/Checkpoint/Anim/After.fbx using Guid(8a491e024a23b0947ad5de6b805edb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd656d040ec0b970605c91e96304f28') in 0.012499 seconds 
+  Import took 0.016115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirEndGround.fbx
+  artifactKey: Guid(094311ab68072de4fa33ff79261118cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirEndGround.fbx using Guid(094311ab68072de4fa33ff79261118cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ebaa755b1af430b0d756a28da8ccea') in 0.013596 seconds 
+  Import took 0.017878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/Goomba/Anim/AccelSkate.fbx
+  artifactKey: Guid(0ecc7918aac16a94799bc71bc014ec92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/Goomba/Anim/AccelSkate.fbx using Guid(0ecc7918aac16a94799bc71bc014ec92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44f940fbe91b9b0d8f9b5f421c58536') in 0.012680 seconds 
+  Import took 0.017585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/Rammerhead/Anim/Air.fbx
+  artifactKey: Guid(ffe2327404989624ca16029d1dd7869a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/Rammerhead/Anim/Air.fbx using Guid(ffe2327404989624ca16029d1dd7869a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f86ecfad8139fa09c4534cda4158a7') in 0.010080 seconds 
+  Import took 0.014907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Assets/HelloMarioAssets/Item/Mushroom/1up.prefab
+  artifactKey: Guid(4515657da09a932449321f0e82bbd324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Item/Mushroom/1up.prefab using Guid(4515657da09a932449321f0e82bbd324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0f24246b7bd3603177411bb220752d') in 0.013697 seconds 
+  Import took 0.017827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000601 seconds.
+  path: Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirEnd.fbx
+  artifactKey: Guid(a752fa2f0dc2896489ccaaabe0cab273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirEnd.fbx using Guid(a752fa2f0dc2896489ccaaabe0cab273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb088a4c3d06da669b200441712c9e9') in 0.017624 seconds 
+  Import took 0.024368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirBounce.fbx
+  artifactKey: Guid(5d9c5979fb1482b4d9afffae3810dc35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirBounce.fbx using Guid(5d9c5979fb1482b4d9afffae3810dc35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29122245edaee5b2df6bd8f81a0d4b18') in 0.013146 seconds 
+  Import took 0.018162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.836204 seconds.
+  path: Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirLoop.fbx
+  artifactKey: Guid(554d5e4f18a1f814fa1a92f18aedac2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirLoop.fbx using Guid(554d5e4f18a1f814fa1a92f18aedac2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4aecf7105af238bf51e692b2296673d') in 0.019597 seconds 
+  Import took 0.025477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirStart.fbx
+  artifactKey: Guid(2c785e3b4d4965b4cb3722920af46c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirStart.fbx using Guid(2c785e3b4d4965b4cb3722920af46c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac101e37161fa30566f5d7577396b6f2') in 0.017274 seconds 
+  Import took 0.022738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.761186 seconds.
+  path: Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirStartGroundAnim.fbx
+  artifactKey: Guid(9e462d69ce3f32d4db8b502470c612a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/AirStartGroundAnim.fbx using Guid(9e462d69ce3f32d4db8b502470c612a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a88a1bab7de59cb71e68504ef43fbb') in 0.016268 seconds 
+  Import took 0.021813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Assets/Beach Essentials/Meshes/BeachUmbrella.fbx
+  artifactKey: Guid(e7d946ff6489149178114101bff87533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Beach Essentials/Meshes/BeachUmbrella.fbx using Guid(e7d946ff6489149178114101bff87533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0486316bafa92eba1b9d44364b881480') in 0.110376 seconds 
+  Import took 0.113980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/GoombaCat/Anim/AttackJumpLoop.fbx
+  artifactKey: Guid(e71afbc277c6d114f8aa0a7c7a77e6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/GoombaCat/Anim/AttackJumpLoop.fbx using Guid(e71afbc277c6d114f8aa0a7c7a77e6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39f13f00906d52c5d706663856513fb') in 0.009719 seconds 
+  Import took 0.013307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Assets/Beach Essentials/Prefabs/BeachUmbrella.prefab
+  artifactKey: Guid(c42244228094d412d95b66c1116ba56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Beach Essentials/Prefabs/BeachUmbrella.prefab using Guid(c42244228094d412d95b66c1116ba56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a11164311763311dcff3f4235e09113') in 0.036458 seconds 
+  Import took 0.040290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/GoombaCat/Anim/AttackJumpStart.fbx
+  artifactKey: Guid(f64b39d1e7bb37a42b0f960e61174b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/GoombaCat/Anim/AttackJumpStart.fbx using Guid(f64b39d1e7bb37a42b0f960e61174b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '802670116fca800bcdd97dec719a7ac6') in 0.012701 seconds 
+  Import took 0.017553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/Amp/Mesh/Amp.FBX
+  artifactKey: Guid(28167dc68a92fb64aa3220073796aa0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/Amp/Mesh/Amp.FBX using Guid(28167dc68a92fb64aa3220073796aa0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc49170c74ad010d27aaa7ad34809531') in 0.154083 seconds 
+  Import took 0.158221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003415 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/Fizzlit/Anim/AttackOmen.fbx
+  artifactKey: Guid(4823faf4a293bb044a70c15b37f56212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/Fizzlit/Anim/AttackOmen.fbx using Guid(4823faf4a293bb044a70c15b37f56212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5513d269b0b33877744d737fb62f0b68') in 0.009652 seconds 
+  Import took 0.013281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/Amp/Amp.prefab
+  artifactKey: Guid(008f079ad2e9077428cb1b671bef97bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/Amp/Amp.prefab using Guid(008f079ad2e9077428cb1b671bef97bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582bf504ad3383ebbe3fcbd5923d6144') in 0.016764 seconds 
+  Import took 0.021873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.293799 seconds.
+  path: Assets/Assets/HelloMarioAssets/Boss/BowserJr/Anim/pc56_b_hmr_idle00.fbx
+  artifactKey: Guid(30e3ebd616b7ddd4aa43be3b55ef7651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Boss/BowserJr/Anim/pc56_b_hmr_idle00.fbx using Guid(30e3ebd616b7ddd4aa43be3b55ef7651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d28207678784d9da9e7a42951a80092') in 0.015299 seconds 
+  Import took 0.021713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000453 seconds.
+  path: Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/SwimRight.fbx
+  artifactKey: Guid(cf77161894880564e826218055c159fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/NPC/Plessie/Anim/SwimRight.fbx using Guid(cf77161894880564e826218055c159fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d30d66ee9d2f189996802818f87ae3') in 0.016797 seconds 
+  Import took 0.022487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/CheepCheep/Anim/SwimReaction.fbx
+  artifactKey: Guid(4d3d038752cee79469375483b234ba7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/CheepCheep/Anim/SwimReaction.fbx using Guid(4d3d038752cee79469375483b234ba7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55387dc69d150b3e10a56166c0c709c7') in 0.009918 seconds 
+  Import took 0.015132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Assets/HelloMarioAssets/Boss/BowserJr/Anim/pc56_b_hmr_walk00.fbx
+  artifactKey: Guid(8840ba552f2a8bb40bee4fe070c3af47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Boss/BowserJr/Anim/pc56_b_hmr_walk00.fbx using Guid(8840ba552f2a8bb40bee4fe070c3af47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7cdc44cb6981dbc82b479f82d722e19') in 0.015176 seconds 
+  Import took 0.020841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.747812 seconds.
+  path: Assets/Assets/HelloMarioAssets/Boss/BoomBoom/Mesh/BoomBoomArms.FBX
+  artifactKey: Guid(7694077e94ef02b47bcb5fdd12fc5860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Boss/BoomBoom/Mesh/BoomBoomArms.FBX using Guid(7694077e94ef02b47bcb5fdd12fc5860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ce72f9c0e24166badea1c7f37e5f8a2') in 0.044065 seconds 
+  Import took 0.050258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/Boo/Anim/DamageLight.fbx
+  artifactKey: Guid(0d317eaad8358ea4ba18dd2c112156d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/Boo/Anim/DamageLight.fbx using Guid(0d317eaad8358ea4ba18dd2c112156d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef048a4711a419532e7d48f873a40056') in 0.010965 seconds 
+  Import took 0.016331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/Peepa/Anim/DamageLight.fbx
+  artifactKey: Guid(0a2fe56a5d8222d44985acc468470630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/Peepa/Anim/DamageLight.fbx using Guid(0a2fe56a5d8222d44985acc468470630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746a13c068cb479222f2840df6f4e4f8') in 0.013989 seconds 
+  Import took 0.019999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/Assets/HelloMarioAssets/NPC/Luma/Luma.prefab
+  artifactKey: Guid(6a163bb2e435fd8469ed01237245dccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/NPC/Luma/Luma.prefab using Guid(6a163bb2e435fd8469ed01237245dccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712da8c4adbfac12a0d8421a5d7c218d') in 0.025529 seconds 
+  Import took 0.032873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000566 seconds.
+  path: Assets/Assets/HelloMarioAssets/NPC/Luma/Mesh/Luma.FBX
+  artifactKey: Guid(8f90fc6a9a911a54dba0271a891aaf8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/NPC/Luma/Mesh/Luma.FBX using Guid(8f90fc6a9a911a54dba0271a891aaf8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11fffe1a0a14bf718af29fc209218193') in 0.038283 seconds 
+  Import took 0.043310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/MudTrooper/Anim/DamageLightEnd.fbx
+  artifactKey: Guid(6a03e43b2a8acc847aab493061869b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/MudTrooper/Anim/DamageLightEnd.fbx using Guid(6a03e43b2a8acc847aab493061869b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2afd611cd8cb818b62176f705980e1fb') in 0.012148 seconds 
+  Import took 0.017504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000485 seconds.
+  path: Assets/Assets/Easy Primitive People/Prefab/CricketBatsman.prefab
+  artifactKey: Guid(467914d9f79be7d4298ad29dd883a986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Easy Primitive People/Prefab/CricketBatsman.prefab using Guid(467914d9f79be7d4298ad29dd883a986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f0c27adff68bc603e9907ee086d3a5') in 0.238383 seconds 
+  Import took 0.243750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Assets/HelloMarioAssets/Enemy/MudTrooper/Anim/DamageLight.fbx
+  artifactKey: Guid(a883560dacde56b4cb4c5f2650418de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Enemy/MudTrooper/Anim/DamageLight.fbx using Guid(a883560dacde56b4cb4c5f2650418de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a417ca35d9b75a5e265cc8a71c0f14') in 0.008519 seconds 
+  Import took 0.012419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.090257 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Mario/Mario.prefab
+  artifactKey: Guid(bf9f419ca202a1c44badfce89719b932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Mario/Mario.prefab using Guid(bf9f419ca202a1c44badfce89719b932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b2bb461ce630cc12b02aa4037c3931') in 0.078191 seconds 
+  Import took 0.083141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/MarioBoomerangTreeHandStandStart.fbx
+  artifactKey: Guid(72942b7367859454895055f15cd60eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/MarioBoomerangTreeHandStandStart.fbx using Guid(72942b7367859454895055f15cd60eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36cc013591ffd220658e9158091443e3') in 0.013400 seconds 
+  Import took 0.017174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Projectiles/Mario's Boomerang.prefab
+  artifactKey: Guid(87c719712b4915f45ac9a4a99e1dcfd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Projectiles/Mario's Boomerang.prefab using Guid(87c719712b4915f45ac9a4a99e1dcfd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330f0964c6b1495a99b9595c2d9f8b2f') in 0.018326 seconds 
+  Import took 0.023180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Mario/Mesh/Mario.FBX
+  artifactKey: Guid(a44b505c7c1cddf46af9d573bad3c309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Mario/Mesh/Mario.FBX using Guid(a44b505c7c1cddf46af9d573bad3c309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '873c0b4d4ab4f05897ed816c68a2c4d7') in 0.606844 seconds 
+  Import took 0.612661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006159 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/MarioBoomerangTreeHandStandEnd.fbx
+  artifactKey: Guid(a51054e82efc3d045bfb742e9aef817b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/MarioBoomerangTreeHandStandEnd.fbx using Guid(a51054e82efc3d045bfb742e9aef817b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1dd9995e033a3b6b7f1ba9712552021') in 0.016306 seconds 
+  Import took 0.021793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/MarioBoomerangTreeHandStandTurn.fbx
+  artifactKey: Guid(300bd562b8d4bfd4ba4970db427b81cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/MarioBoomerangTreeHandStandTurn.fbx using Guid(300bd562b8d4bfd4ba4970db427b81cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30651b4872fd7bcde484c585cbba2fc7') in 0.012162 seconds 
+  Import took 0.018421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Mario/Mario's Tail.prefab
+  artifactKey: Guid(cbdfa94549529274eb6676af6b4dbbbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Mario/Mario's Tail.prefab using Guid(cbdfa94549529274eb6676af6b4dbbbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da69bc01d4a53749970f907ceb515246') in 0.022916 seconds 
+  Import took 0.028327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.418229 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectPush.fbx
+  artifactKey: Guid(a61d46947f721ce4480393fa79c9a754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectPush.fbx using Guid(a61d46947f721ce4480393fa79c9a754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba5cc878ebbf19901500da8ae38a7672') in 0.013985 seconds 
+  Import took 0.020514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectWaitPanic.fbx
+  artifactKey: Guid(4b68a08c927aae842a518a14a9986abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectWaitPanic.fbx using Guid(4b68a08c927aae842a518a14a9986abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f975563bbc67fd0a3a0a1daae23fa5a3') in 0.012662 seconds 
+  Import took 0.018031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectSurprise.fbx
+  artifactKey: Guid(387d24df5b32672418e9d4eb3c31fb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectSurprise.fbx using Guid(387d24df5b32672418e9d4eb3c31fb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57bc9343f01fb3d1abdb05fbd24810a') in 0.014944 seconds 
+  Import took 0.021255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000909 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/Dash.fbx
+  artifactKey: Guid(93cb8b57bad9fd64dadba02e30f3ec5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/Dash.fbx using Guid(93cb8b57bad9fd64dadba02e30f3ec5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11faa7ea3becfd7628525b026909ec57') in 0.012254 seconds 
+  Import took 0.018693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectUnLock.fbx
+  artifactKey: Guid(8230df52d5b9d81409863c98c74b20b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectUnLock.fbx using Guid(8230df52d5b9d81409863c98c74b20b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2030e2dccb30c4aef08f4113a22e2e4e') in 0.012395 seconds 
+  Import took 0.017840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectWait.fbx
+  artifactKey: Guid(abe360a6770ffe04e846886b2cc380f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectWait.fbx using Guid(abe360a6770ffe04e846886b2cc380f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9079bad29f2fc0b68803b7b81f714480') in 0.007618 seconds 
+  Import took 0.011227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectRun.fbx
+  artifactKey: Guid(905e3a0a49c245042b908f1932c6e562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectRun.fbx using Guid(905e3a0a49c245042b908f1932c6e562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2d14b77e42cde261c1ed1af4c2de79') in 0.007715 seconds 
+  Import took 0.012453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027223 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectUnLock.fbx
+  artifactKey: Guid(8230df52d5b9d81409863c98c74b20b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/CourseSelectUnLock.fbx using Guid(8230df52d5b9d81409863c98c74b20b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2030e2dccb30c4aef08f4113a22e2e4e') in 0.006457 seconds 
+  Import took 0.011178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.211289 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/DashDashPanel.fbx
+  artifactKey: Guid(20013d01d15be694cb4b0fa4c06bab96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/DashDashPanel.fbx using Guid(20013d01d15be694cb4b0fa4c06bab96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7b0d2b9a1c8c2ae012db4c24080df0') in 0.012736 seconds 
+  Import took 0.019765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000556 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/DashFast.fbx
+  artifactKey: Guid(90a0ec7e5ac303645a39e9fcbd9e0327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/DashFast.fbx using Guid(90a0ec7e5ac303645a39e9fcbd9e0327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a166d82bca556c011a0b6338edc63bf3') in 0.011132 seconds 
+  Import took 0.017049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/DashStart.fbx
+  artifactKey: Guid(70884a7c7a594124ba678cc6dbe2d0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/DashStart.fbx using Guid(70884a7c7a594124ba678cc6dbe2d0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706fbd28f63a00f54e3e7d6e9ff70852') in 0.010082 seconds 
+  Import took 0.015671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/DieOver.fbx
+  artifactKey: Guid(e94ef34a355d3ef44ac755cbf877d444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/DieOver.fbx using Guid(e94ef34a355d3ef44ac755cbf877d444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86307a34b384fa0804062fc95e538a8b') in 0.012459 seconds 
+  Import took 0.018557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/DashDashPanel.fbx
+  artifactKey: Guid(20013d01d15be694cb4b0fa4c06bab96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/DashDashPanel.fbx using Guid(20013d01d15be694cb4b0fa4c06bab96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7b0d2b9a1c8c2ae012db4c24080df0') in 0.007740 seconds 
+  Import took 0.012247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/DashSign.fbx
+  artifactKey: Guid(b7d072705fcbc0b4d825b85e041effb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/DashSign.fbx using Guid(b7d072705fcbc0b4d825b85e041effb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '127367a952bbe4b027127ddc26ea8f15') in 0.008378 seconds 
+  Import took 0.012425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/DashFastStart.fbx
+  artifactKey: Guid(9578d90a2777c6944980ee757c0fba48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/DashFastStart.fbx using Guid(9578d90a2777c6944980ee757c0fba48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9857cb08e9263b750c6024fc84adfd') in 0.014445 seconds 
+  Import took 0.019802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/DashSuperStar.fbx
+  artifactKey: Guid(d2a3ba5d4a172cb47992579bb409a4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/DashSuperStar.fbx using Guid(d2a3ba5d4a172cb47992579bb409a4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9a182cc798d9e75f4b093543d2208e') in 0.009536 seconds 
+  Import took 0.016558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008306 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Anim/DashSign.fbx
+  artifactKey: Guid(b7d072705fcbc0b4d825b85e041effb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Anim/DashSign.fbx using Guid(b7d072705fcbc0b4d825b85e041effb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '127367a952bbe4b027127ddc26ea8f15') in 0.006205 seconds 
+  Import took 0.011365 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.023811 seconds.
+Registered in 0.006010 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 00:55:46.692 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018faca0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  1.672 seconds
+- Completed reload, in  1.282 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1672ms)
-		BeginReloadAssembly (202ms)
+	ReloadAssembly (1283ms)
+		BeginReloadAssembly (143ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (1354ms)
-			LoadAssemblies (192ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1061ms)
+			LoadAssemblies (102ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (327ms)
+			SetupTypeCache (375ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (454ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (404ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (276ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 269.5 MB.
+System memory in use after: 269.6 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2655.
+Total: 3.043814 ms (FindLiveObjects: 0.189537 ms CreateObjectMapping: 0.065300 ms MarkObjects: 2.756726 ms  DeleteObjects: 0.030852 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010609 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 00:57:24.758 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018fd650 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.250 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2254ms)
+		BeginReloadAssembly (310ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (29ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (82ms)
+		EndReloadAssembly (1799ms)
+			LoadAssemblies (167ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (692ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (647ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (189ms)
+				ProcessInitializeOnLoadAttributes (426ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 269.7 MB.
+System memory in use after: 269.9 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2657.
+Total: 4.237234 ms (FindLiveObjects: 0.241361 ms CreateObjectMapping: 0.085823 ms MarkObjects: 3.872615 ms  DeleteObjects: 0.035540 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005002 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 00:57:29.224 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018a15e0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.799 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1800ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (1516ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (651ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (469ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
 				BeforeProcessingInitializeOnLoad (140ms)
-				ProcessInitializeOnLoadAttributes (254ms)
+				ProcessInitializeOnLoadAttributes (308ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (40ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 2.99 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2104 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.7 MB.
-System memory in use after: 133.8 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2600.
-Total: 3.344800 ms (FindLiveObjects: 0.251700 ms CreateObjectMapping: 0.054000 ms MarkObjects: 3.012900 ms  DeleteObjects: 0.024300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 9.030491 seconds.
-  path: Assets/Prefabs/Mario.prefab
-  artifactKey: Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Mario.prefab using Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a97c7cf68eea46822ac589e8434d370c') in 0.112611 seconds 
-  Import took 0.118437 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.884660 seconds.
-  path: Assets/Prefabs/Mario.prefab
-  artifactKey: Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Mario.prefab using Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88a71ce2eaec0a17f5802e9c0b5680f4') in 0.055396 seconds 
-  Import took 0.060899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.977114 seconds.
-  path: Assets/Prefabs/Mario.prefab
-  artifactKey: Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Mario.prefab using Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b33c52500bd8d9af790ddedc20e1c00') in 0.052228 seconds 
-  Import took 0.057998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.890058 seconds.
-  path: Assets/Prefabs/Mario.prefab
-  artifactKey: Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Mario.prefab using Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76067b4e148248915378f9c6a929d5d3') in 0.057954 seconds 
-  Import took 0.064298 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.024489 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 269.9 MB.
+System memory in use after: 270.1 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2659.
+Total: 3.328326 ms (FindLiveObjects: 0.220742 ms CreateObjectMapping: 0.078064 ms MarkObjects: 3.003549 ms  DeleteObjects: 0.024698 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 716.408158 seconds.
+  path: Assets/Scripts/PlayerNetwork.cs
+  artifactKey: Guid(0b6b02ef5a5a48f4b9e0274d3240665a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerNetwork.cs using Guid(0b6b02ef5a5a48f4b9e0274d3240665a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051e629c1e585050b389461849b53ca6') in 0.005024 seconds 
+  Import took 0.009098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027408 seconds.
+  path: Assets/Scripts/PlayerNetwork.cs
+  artifactKey: Guid(0b6b02ef5a5a48f4b9e0274d3240665a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerNetwork.cs using Guid(0b6b02ef5a5a48f4b9e0274d3240665a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051e629c1e585050b389461849b53ca6') in 0.002008 seconds 
+  Import took 0.006373 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012166 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 00:59:09.417 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018efbf0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  1.775 seconds
+- Completed reload, in  2.544 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1775ms)
-		BeginReloadAssembly (213ms)
+	ReloadAssembly (2545ms)
+		BeginReloadAssembly (217ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (79ms)
+		EndReloadAssembly (2091ms)
+			LoadAssemblies (229ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (852ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (727ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (203ms)
+				ProcessInitializeOnLoadAttributes (492ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 270.0 MB.
+System memory in use after: 270.2 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2661.
+Total: 4.637444 ms (FindLiveObjects: 0.255121 ms CreateObjectMapping: 0.084459 ms MarkObjects: 4.261008 ms  DeleteObjects: 0.035073 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004551 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 00:59:13.726 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018a01c0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.538 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1538ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1321ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (489ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (496ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (145ms)
+				ProcessInitializeOnLoadAttributes (330ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 270.3 MB.
+System memory in use after: 270.5 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2663.
+Total: 4.394425 ms (FindLiveObjects: 0.220693 ms CreateObjectMapping: 0.081500 ms MarkObjects: 4.061068 ms  DeleteObjects: 0.029589 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 29.287648 seconds.
+  path: Assets/Scripts/PlayerNetwork.cs
+  artifactKey: Guid(0b6b02ef5a5a48f4b9e0274d3240665a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerNetwork.cs using Guid(0b6b02ef5a5a48f4b9e0274d3240665a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03fb5db1481c66fb7420fa94555ebfe') in 0.004817 seconds 
+  Import took 0.009367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035962 seconds.
+  path: Assets/Scripts/PlayerNetwork.cs
+  artifactKey: Guid(0b6b02ef5a5a48f4b9e0274d3240665a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerNetwork.cs using Guid(0b6b02ef5a5a48f4b9e0274d3240665a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03fb5db1481c66fb7420fa94555ebfe') in 0.001539 seconds 
+  Import took 0.005503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 80.235636 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6316a27f0bacec023a8590a6e64dae') in 0.002421 seconds 
+  Import took 0.008574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003026 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6316a27f0bacec023a8590a6e64dae') in 0.004187 seconds 
+  Import took 0.010620 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.021474 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 01:00:57.542 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001be0af0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.110 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2110ms)
+		BeginReloadAssembly (153ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1850ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (667ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (670ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (221ms)
+				ProcessInitializeOnLoadAttributes (416ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 270.5 MB.
+System memory in use after: 270.7 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2665.
+Total: 8.744864 ms (FindLiveObjects: 0.670190 ms CreateObjectMapping: 0.343678 ms MarkObjects: 7.694009 ms  DeleteObjects: 0.034519 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 21.648547 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea5acde1095c15d21b8cdb2b085986c') in 0.009052 seconds 
+  Import took 0.017290 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004470 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 01:01:02.276 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600001be18f0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.785 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1786ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (1514ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (588ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (533ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (158ms)
+				ProcessInitializeOnLoadAttributes (353ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 270.7 MB.
+System memory in use after: 270.9 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2667.
+Total: 3.651250 ms (FindLiveObjects: 0.231285 ms CreateObjectMapping: 0.085296 ms MarkObjects: 3.300705 ms  DeleteObjects: 0.032474 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005412 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 01:01:17.298 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018e9d50 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.489 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1489ms)
+		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (1436ms)
-			LoadAssemblies (199ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1285ms)
+			LoadAssemblies (102ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (336ms)
+			SetupTypeCache (465ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (472ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (494ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (324ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 270.9 MB.
+System memory in use after: 271.1 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2669.
+Total: 3.948252 ms (FindLiveObjects: 0.219838 ms CreateObjectMapping: 0.083151 ms MarkObjects: 3.613664 ms  DeleteObjects: 0.029903 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006049 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 01:01:35.298 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018e9b90 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  2.503 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2504ms)
+		BeginReloadAssembly (222ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (18ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (2164ms)
+			LoadAssemblies (235ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (862ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (786ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (195ms)
+				ProcessInitializeOnLoadAttributes (558ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 271.0 MB.
+System memory in use after: 271.2 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2671.
+Total: 4.311170 ms (FindLiveObjects: 0.412959 ms CreateObjectMapping: 0.105908 ms MarkObjects: 3.758891 ms  DeleteObjects: 0.031181 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 37.336833 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(54393d2e87421b345bf69fcf3130006f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f4a680161eda1c1a3c52f504a36cb3') in 0.007502 seconds 
+  Import took 0.013648 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004176 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 01:01:40.237 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018eb720 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.791 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1791ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1531ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (577ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (568ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (170ms)
+				ProcessInitializeOnLoadAttributes (374ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 271.3 MB.
+System memory in use after: 271.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2673.
+Total: 3.949084 ms (FindLiveObjects: 0.229134 ms CreateObjectMapping: 0.078363 ms MarkObjects: 3.609059 ms  DeleteObjects: 0.030475 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 70.957543 seconds.
+  path: Assets/Assets/Beach Essentials
+  artifactKey: Guid(40f036ac5304af040a37753261ece60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Beach Essentials using Guid(40f036ac5304af040a37753261ece60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22fc4148afbcf890bfba6afd1944d67e') in 0.008726 seconds 
+  Import took 0.015859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002850 seconds.
+  path: Assets/Assets/Beach Essentials
+  artifactKey: Guid(40f036ac5304af040a37753261ece60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Beach Essentials using Guid(40f036ac5304af040a37753261ece60e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22fc4148afbcf890bfba6afd1944d67e') in 0.002431 seconds 
+  Import took 0.009159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.286790 seconds.
+  path: Assets/Assets/Easy Primitive People
+  artifactKey: Guid(91738940f8553884fab2b95862a30e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Easy Primitive People using Guid(91738940f8553884fab2b95862a30e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a7b01970bc0b3ff3483a1210fb6795') in 0.001976 seconds 
+  Import took 0.009690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.812749 seconds.
+  path: Assets/Assets/Sprites
+  artifactKey: Guid(4f2def73909e09a41b9ce375678ee21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Sprites using Guid(4f2def73909e09a41b9ce375678ee21e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebca25350d96b23f4de93e1b72a43ba5') in 0.002300 seconds 
+  Import took 0.011007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.549737 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Mario
+  artifactKey: Guid(124e277b3e1962742808308e4348a155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Mario using Guid(124e277b3e1962742808308e4348a155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292bbae4bc112617454c2c546f5a3a87') in 0.002147 seconds 
+  Import took 0.011343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002110 seconds.
+  path: Assets/Assets/HelloMarioAssets/Player/Mario
+  artifactKey: Guid(124e277b3e1962742808308e4348a155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/HelloMarioAssets/Player/Mario using Guid(124e277b3e1962742808308e4348a155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292bbae4bc112617454c2c546f5a3a87') in 0.003534 seconds 
+  Import took 0.012040 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003526 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 01:03:26.269 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018ee610 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.420 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1421ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (1191ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (399ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (489ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (149ms)
-				ProcessInitializeOnLoadAttributes (264ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (331ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (40ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2104 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.8 MB.
-System memory in use after: 133.9 MB.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 271.5 MB.
+System memory in use after: 271.7 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2603.
-Total: 3.397900 ms (FindLiveObjects: 0.271700 ms CreateObjectMapping: 0.054400 ms MarkObjects: 3.046000 ms  DeleteObjects: 0.024000 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2675.
+Total: 3.165811 ms (FindLiveObjects: 0.213184 ms CreateObjectMapping: 0.077532 ms MarkObjects: 2.847882 ms  DeleteObjects: 0.026218 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 26.817652 seconds.
+  path: Assets/Prefabs/Mario.prefab
+  artifactKey: Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Mario.prefab using Guid(4b871e8909f794844a231aa29efd4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eddc4cf0075d7cdb10ca2e5c4504d05') in 0.176087 seconds 
+  Import took 0.181380 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.052565 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 01:06:46.148 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018f3560 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  7.843 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7845ms)
+		BeginReloadAssembly (571ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (27ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (247ms)
+		EndReloadAssembly (6880ms)
+			LoadAssemblies (578ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (2684ms)
+			ReleaseScriptCaches (10ms)
+			RebuildScriptCaches (522ms)
+			SetupLoadedEditorAssemblies (2254ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (753ms)
+				ProcessInitializeOnLoadAttributes (1409ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (32ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 271.8 MB.
+System memory in use after: 272.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2678.
+Total: 28.072678 ms (FindLiveObjects: 0.830728 ms CreateObjectMapping: 0.328209 ms MarkObjects: 26.832164 ms  DeleteObjects: 0.076244 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.025066 seconds.
+Registered in 0.006030 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.25 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 01:08:27.638 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018a6b50 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
-- Completed reload, in  1.872 seconds
+- Completed reload, in  1.831 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1872ms)
-		BeginReloadAssembly (215ms)
+	ReloadAssembly (1832ms)
+		BeginReloadAssembly (155ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1532ms)
-			LoadAssemblies (207ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1561ms)
+			LoadAssemblies (121ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (345ms)
+			SetupTypeCache (558ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (493ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (577ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (148ms)
-				ProcessInitializeOnLoadAttributes (284ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (41ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (166ms)
+				ProcessInitializeOnLoadAttributes (382ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2104 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.8 MB.
-System memory in use after: 133.9 MB.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 272.0 MB.
+System memory in use after: 272.2 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2605.
-Total: 3.497000 ms (FindLiveObjects: 0.238000 ms CreateObjectMapping: 0.058600 ms MarkObjects: 3.173600 ms  DeleteObjects: 0.024800 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2680.
+Total: 3.934049 ms (FindLiveObjects: 0.220361 ms CreateObjectMapping: 0.085062 ms MarkObjects: 3.596972 ms  DeleteObjects: 0.029922 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007452 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-01 01:08:46.449 Unity[3460:64099] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018d7cd0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Mono: successfully reloaded assembly
+- Completed reload, in  1.330 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1330ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (1121ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (400ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (447ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (135ms)
+				ProcessInitializeOnLoadAttributes (294ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2100 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 272.1 MB.
+System memory in use after: 272.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2682.
+Total: 3.093828 ms (FindLiveObjects: 0.206845 ms CreateObjectMapping: 0.072658 ms MarkObjects: 2.788554 ms  DeleteObjects: 0.024347 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

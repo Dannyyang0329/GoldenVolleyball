@@ -4389,7 +4389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingSpeed: 150
   rotationSpeed: 16
-  maxJumpHeight: 125
+  maxJumpHeight: 50
   maxJumpTime: 1.5
   jumpingSound: {fileID: 0}
 --- !u!114 &5537049744988471155
