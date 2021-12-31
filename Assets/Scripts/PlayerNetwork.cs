@@ -5,7 +5,7 @@ using MLAPI.NetworkVariable;
 
 public class PlayerNetwork : NetworkBehaviour 
 {
-    public NetworkVariableVector2 Position = new NetworkVariableVector2(new NetworkVariableSettings {
+    public NetworkVariableVector3 Position = new NetworkVariableVector3(new NetworkVariableSettings {
         WritePermission = NetworkVariablePermission.ServerOnly,
         ReadPermission = NetworkVariablePermission.Everyone
     });
@@ -28,7 +28,7 @@ public class PlayerNetwork : NetworkBehaviour
         Position.Value = GetRandomPosition();
     }
     static Vector2 GetRandomPosition() {
-        return new Vector2(Random.Range(-5f, 5f), Random.Range(-5f, 5f));
+        return new Vector3(Random.Range(-5f, 5f), 5, Random.Range(-5f, 5f));
     }
 
     private void Update() {
