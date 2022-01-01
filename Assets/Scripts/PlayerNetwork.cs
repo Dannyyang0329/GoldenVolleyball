@@ -32,6 +32,6 @@ public class PlayerNetwork : NetworkBehaviour
     }
 
     private void Update() {
-        transform.position = Position.Value;
+        //transform.position = Position.Value;
     }
 }

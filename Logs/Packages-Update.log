@@ -1,0 +1,10 @@
+
+=== Sat Jan  1 11:28:31 2022
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.2d.animation@5.0.9
+  com.unity.2d.sprite@1.0.0
+  com.unity.2d.spriteshape@5.1.5
