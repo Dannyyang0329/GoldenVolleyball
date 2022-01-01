@@ -4,37 +4,35 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController), typeof(PlayerInput))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private float movingSpeed = 150f;
-    [SerializeField]
-    private float rotationSpeed = 16f;
-
+    // Component
     private CharacterController controller;
     private Animator animator;
     private PlayerInput playerInput;
 
+    // Input Variables
     private InputAction moveAction;
     private InputAction jumpAction;
     private InputAction hitAction;
 
     private AudioSource audioSource;
 
+    // Move Variables
+    [SerializeField] private float movingSpeed = 150f;
+    [SerializeField] private float rotationSpeed = 16f;
+
     // Gravity Variables
-    private float gravityValue = -9.8f;
+    private float gravityValue = -0.16f;
     private float groundedGravity = -0.05f;                            
 
     // Jumping Variables
-    [SerializeField]
-    private float maxJumpHeight = 10f;
-    [SerializeField]
-    private float maxJumpTime = 1.5f;
-    [SerializeField]
-    private AudioClip jumpingSound;
+    // [SerializeField] private float maxJumpHeight = 10f;
+    // [SerializeField] private float maxJumpTime = 1f;
+    [SerializeField] private AudioClip jumpingSound;
+    [SerializeField] private float initialJumpVelocity;
 
     private bool isPlayerGrounded = true;
     private bool isJumping = false;
-    private float initialJumpVelocity;
-
+    
     Vector3 jumpMovement;
 
     // animator controller
@@ -54,7 +52,7 @@ public class PlayerController : MonoBehaviour
         jumpAction = playerInput.actions["Jump"];
         hitAction = playerInput.actions["Hit"];
 
-        setupJumpVariables();
+        //setupJumpVariables();
     }
 
     void Update()
@@ -103,14 +101,14 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isSmash", smash);
     }
 
-
+    /*
     void setupJumpVariables()
     {
         float timeToApex = maxJumpTime / 2 / Time.deltaTime;
 
         initialJumpVelocity = (2 * maxJumpHeight) / timeToApex;
         gravityValue = -initialJumpVelocity / timeToApex;
-    }
+    }*/
 
     void detectGrounded() 
     {
