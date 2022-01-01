@@ -1221,6 +1221,7 @@ GameObject:
   - component: {fileID: 5683248779547787726}
   - component: {fileID: 8609020942131529264}
   - component: {fileID: 1649642029508302732}
+  - component: {fileID: 7518433402641353555}
   m_Layer: 0
   m_Name: Luigi
   m_TagString: Untagged
@@ -1283,8 +1284,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 0
+  m_Radius: 0.01
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -1386,6 +1387,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position:
     m_InternalValue: {x: 0, y: 0, z: 0}
+--- !u!136 &7518433402641353555
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864693102229467804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.7269366
+  m_Height: 1.844664
+  m_Direction: 1
+  m_Center: {x: 0.0023082732, y: 0.80996746, z: 0}
 --- !u!1 &2028530466457015468
 GameObject:
   m_ObjectHideFlags: 0

@@ -3243,6 +3243,7 @@ GameObject:
   - component: {fileID: 3218288351940112736}
   - component: {fileID: 7653350547761290484}
   - component: {fileID: 9034340492652978637}
+  - component: {fileID: 2605913231988869994}
   m_Layer: 0
   m_Name: Toad
   m_TagString: Untagged
@@ -3380,8 +3381,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 0
+  m_Radius: 0.01
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -3422,6 +3423,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &2605913231988869994
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5213400364837485882}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5362017
+  m_Height: 1.6083456
+  m_Direction: 1
+  m_Center: {x: -0.0070427703, y: 0.7137117, z: -0.044513702}
 --- !u!1 &5533529659678098104
 GameObject:
   m_ObjectHideFlags: 0
