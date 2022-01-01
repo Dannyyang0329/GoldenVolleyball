@@ -30,6 +30,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip jumpingSound;
     [SerializeField] private float initialJumpVelocity;
 
+    // hit strength
+    [SerializeField] private float strength;
+
     private bool isPlayerGrounded = true;
     private bool isJumping = false;
     
@@ -62,6 +65,7 @@ public class PlayerController : MonoBehaviour
         if (isPlayerGrounded) jump = false;
         run = false;
         smash = false;
+        hit = false;
         // get the value from the joystick
         Vector2 input = moveAction.ReadValue<Vector2>().normalized;
         if ((input.x != 0 || input.y != 0) && !isJumping) run = true;
@@ -90,15 +94,17 @@ public class PlayerController : MonoBehaviour
         }
 
         // press hit button
-        if (hitAction.triggered&&isJumping)
+        if (hitAction.triggered)
         {
-            smash = true;
+            if (isJumping) smash = true;
+            else hit = true;
         }
 
         controller.Move(jumpMovement);
         animator.SetBool("isRun", run);
         animator.SetBool("isJump", jump);
         animator.SetBool("isSmash", smash);
+        animator.SetBool("isHit", hit);
     }
 
     /*
@@ -108,7 +114,8 @@ public class PlayerController : MonoBehaviour
 
         initialJumpVelocity = (2 * maxJumpHeight) / timeToApex;
         gravityValue = -initialJumpVelocity / timeToApex;
-    }*/
+    }
+    */
 
     void detectGrounded() 
     {

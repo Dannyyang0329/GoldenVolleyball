@@ -4397,7 +4397,7 @@ Transform:
   m_GameObject: {fileID: 6964494533529714251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.9, z: -300}
-  m_LocalScale: {x: 25, y: 25, z: 25}
+  m_LocalScale: {x: 45, y: 45, z: 45}
   m_Children:
   - {fileID: 8144905330641258022}
   - {fileID: 5897432297366578360}
@@ -4485,7 +4485,7 @@ MonoBehaviour:
   movingSpeed: 150
   rotationSpeed: 16
   jumpingSound: {fileID: 0}
-  initialJumpVelocity: 4
+  initialJumpVelocity: 6
 --- !u!114 &5537049744988471155
 MonoBehaviour:
   m_ObjectHideFlags: 0
