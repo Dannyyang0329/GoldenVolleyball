@@ -4380,6 +4380,7 @@ GameObject:
   - component: {fileID: 5537049744988471155}
   - component: {fileID: 5537049744988471159}
   - component: {fileID: 7010239818563650331}
+  - component: {fileID: 2541866924985060266}
   m_Layer: 0
   m_Name: Mario
   m_TagString: Untagged
@@ -4547,6 +4548,20 @@ MonoBehaviour:
   PrefabHashGenerator: Mario
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
+--- !u!136 &2541866924985060266
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6964494533529714251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.741866
+  m_Height: 1.7574928
+  m_Direction: 1
+  m_Center: {x: -0.006628418, y: 0.70665854, z: 0.014876708}
 --- !u!1 &7001640195614515104
 GameObject:
   m_ObjectHideFlags: 0
