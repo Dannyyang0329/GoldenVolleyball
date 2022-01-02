@@ -29,7 +29,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float initialJumpVelocity;
 
     // hit strength
-    [SerializeField] private float strength;
+    [SerializeField] private float strength = 500;
+    [SerializeField] Vector2 hitDirection;
 
     private bool isPlayerGrounded = true;
     private bool isJumping = false;
@@ -42,9 +43,11 @@ public class PlayerController : MonoBehaviour
     private bool hit;
     private bool smash;
 
-
     // camera
     private GameObject cine_camera;
+
+    // ball target
+    private GameObject ball;
 
     private void Start() 
     {
@@ -61,6 +64,8 @@ public class PlayerController : MonoBehaviour
         cine_camera = GameObject.Find("Camera");
         cine_camera.GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = transform.GetChild(0);
         cine_camera.GetComponent<Cinemachine.CinemachineVirtualCamera>().LookAt = transform.GetChild(0);
+
+        ball = GameObject.Find("volleyball");
     }
 
     void Update()
@@ -98,10 +103,33 @@ public class PlayerController : MonoBehaviour
             audioManager.Play("Jump");
             jump = true;
         }
-
+        /*
         // press hit button
         if (hitAction.triggered)
         {
+            if (isJumping) smash = true;
+            else hit = true;
+        }
+        */
+
+        if (hitAction.WasPerformedThisFrame())
+        {
+            hitDirection = hitAction.ReadValue<Vector2>();
+        }
+
+            if (hitAction.WasReleasedThisFrame())
+        {
+            
+            float ballx = ball.transform.position.x;
+            float bally = ball.transform.position.y;
+            float ballz = ball.transform.position.z;
+
+            if(ballx>transform.position.x-100 && ballx<transform.position.x+100 &&
+                bally>transform.position.y-100 && bally<transform.position.y+100 &&
+                ballz>transform.position.z-100 && ballz < transform.position.z + 100)
+            {
+                ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 100 , strength * hitDirection.y);
+            }
             if (isJumping) smash = true;
             else hit = true;
         }
