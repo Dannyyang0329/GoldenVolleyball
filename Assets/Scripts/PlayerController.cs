@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
                 bally>transform.position.y-100 && bally<transform.position.y+100 &&
                 ballz>transform.position.z-100 && ballz < transform.position.z + 100)
             {
-                ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 100 , strength * hitDirection.y);
+                ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300 , strength * hitDirection.y);
             }
             if (isJumping) smash = true;
             else hit = true;
