@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private InputAction jumpAction;
     private InputAction hitAction;
 
-    private AudioSource audioSource;
+    public AudioManager audioManager;
 
     // Move Variables
     [SerializeField] private float movingSpeed = 150f;
@@ -25,9 +25,7 @@ public class PlayerController : MonoBehaviour
     private float groundedGravity = -0.05f;                            
 
     // Jumping Variables
-    // [SerializeField] private float maxJumpHeight = 10f;
-    // [SerializeField] private float maxJumpTime = 1f;
-    [SerializeField] private AudioClip jumpingSound;
+    public AudioClip jumpingSound;
     [SerializeField] private float initialJumpVelocity;
 
     // hit strength
@@ -44,18 +42,25 @@ public class PlayerController : MonoBehaviour
     private bool hit;
     private bool smash;
 
+
+    // camera
+    private GameObject cine_camera;
+
     private void Start() 
     {
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
+
         controller = GetComponent<CharacterController>();
         playerInput = GetComponent<PlayerInput>();
-        audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
 
         moveAction = playerInput.actions["Move"];
         jumpAction = playerInput.actions["Jump"];
         hitAction = playerInput.actions["Hit"];
 
-        //setupJumpVariables();
+        cine_camera = GameObject.Find("Camera");
+        cine_camera.GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = transform.GetChild(0);
+        cine_camera.GetComponent<Cinemachine.CinemachineVirtualCamera>().LookAt = transform.GetChild(0);
     }
 
     void Update()
@@ -66,6 +71,7 @@ public class PlayerController : MonoBehaviour
         run = false;
         smash = false;
         hit = false;
+
         // get the value from the joystick
         Vector2 input = moveAction.ReadValue<Vector2>().normalized;
         if ((input.x != 0 || input.y != 0) && !isJumping) run = true;
@@ -89,7 +95,7 @@ public class PlayerController : MonoBehaviour
         if(jumpAction.triggered && !isJumping && isPlayerGrounded) {
             isJumping = true;
             jumpMovement.y = initialJumpVelocity;
-            audioSource.PlayOneShot(jumpingSound); // play jump sound
+            audioManager.Play("Jump");
             jump = true;
         }
 
