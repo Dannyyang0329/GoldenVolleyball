@@ -13,11 +13,6 @@ public class MainMenuController : MonoBehaviour {
         Application.Quit();
     }
 
-    public void LoadGame() {
-        SceneManager.LoadScene("GameScene");
-    }
-
-
     public void HoverSound() {
         audioManager.Play("HoverSound");
     }

@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 72658663}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 211332865}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &72658663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +428,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 1506635850}
   transitionTime: 1
+  nextSceneName_1: SelectCharacterScene
+  nextSceneName_2: 
+  nextSceneName_3: 
 --- !u!1 &261310861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1119,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1543869655}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 211332867}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadNextScene1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1543869655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1258,7 +1285,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 211332867}
         m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: LoadNextScene
+        m_MethodName: LoadNextScene1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -8,8 +8,18 @@ public class LevelLoader : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
 
-    public void LoadNextScene() {
-        StartCoroutine(LoadLevel("GameScene"));
+    public string nextSceneName_1;
+    public string nextSceneName_2;
+    public string nextSceneName_3;
+
+    public void LoadNextScene1() {
+        StartCoroutine(LoadLevel(nextSceneName_1));
+    }
+    public void LoadNextScene2() {
+        StartCoroutine(LoadLevel(nextSceneName_2));
+    }
+    public void LoadNextScene3() {
+        StartCoroutine(LoadLevel(nextSceneName_3));
     }
 
     IEnumerator LoadLevel(string sceneName) {
