@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using MLAPI;
 
 [RequireComponent(typeof(CharacterController), typeof(PlayerInput))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : NetworkBehaviour
 {
     // Component
     private CharacterController controller;
@@ -61,84 +62,82 @@ public class PlayerController : MonoBehaviour
         jumpAction = playerInput.actions["Jump"];
         hitAction = playerInput.actions["Hit"];
 
-        cine_camera = GameObject.Find("Camera");
+        /*cine_camera = GameObject.Find("Camera");
         cine_camera.GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = transform.GetChild(0);
         cine_camera.GetComponent<Cinemachine.CinemachineVirtualCamera>().LookAt = transform.GetChild(0);
+        */
 
         ball = GameObject.Find("volleyball");
     }
 
     void Update()
     {
-        detectGrounded();
-        handleGravity();
-        if (isPlayerGrounded) jump = false;
-        run = false;
-        smash = false;
-        hit = false;
+        if (IsLocalPlayer) {
+            detectGrounded();
+            handleGravity();
+            if (isPlayerGrounded) jump = false;
+            run = false;
+            smash = false;
+            hit = false;
 
-        // get the value from the joystick
-        Vector2 input = moveAction.ReadValue<Vector2>().normalized;
-        if ((input.x != 0 || input.y != 0) && !isJumping) run = true;
-        
-        // move the player
-        Vector3 move = new Vector3(input.x, 0, input.y).normalized;
-        if (isPlayerGrounded && !isJumping)
-        {
-            controller.Move(move * movingSpeed * Time.deltaTime);
-        }
+            // get the value from the joystick
+            Vector2 input = moveAction.ReadValue<Vector2>().normalized;
+            if ((input.x != 0 || input.y != 0) && !isJumping) run = true;
 
-        // rotate the player
-        if (!isJumping && isPlayerGrounded)
-        {
-            float degree = Mathf.Atan2(input.x, input.y) * (180 / Mathf.PI);
-            Quaternion targetRotation = Quaternion.Euler(0, degree, 0);
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-        }
-         
-        // press jump button
-        if(jumpAction.triggered && !isJumping && isPlayerGrounded) {
-            isJumping = true;
-            jumpMovement.y = initialJumpVelocity;
-            audioManager.Play("Jump");
-            jump = true;
-        }
-        /*
-        // press hit button
-        if (hitAction.triggered)
-        {
-            if (isJumping) smash = true;
-            else hit = true;
-        }
-        */
-
-        if (hitAction.WasPerformedThisFrame())
-        {
-            hitDirection = hitAction.ReadValue<Vector2>();
-        }
-
-            if (hitAction.WasReleasedThisFrame())
-        {
-            
-            float ballx = ball.transform.position.x;
-            float bally = ball.transform.position.y;
-            float ballz = ball.transform.position.z;
-
-            if(ballx>transform.position.x-100 && ballx<transform.position.x+100 &&
-                bally>transform.position.y-100 && bally<transform.position.y+100 &&
-                ballz>transform.position.z-100 && ballz < transform.position.z + 100)
-            {
-                ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300 , strength * hitDirection.y);
+            // move the player
+            Vector3 move = new Vector3(input.x, 0, input.y).normalized;
+            if (isPlayerGrounded && !isJumping) {
+                controller.Move(move * movingSpeed * Time.deltaTime);
             }
-            if (isJumping) smash = true;
-            else hit = true;
-        }
 
-        controller.Move(jumpMovement);
-        animator.SetBool("isRun", run);
-        animator.SetBool("isJump", jump);
-        animator.SetBool("isSmash", smash);
-        animator.SetBool("isHit", hit);
+            // rotate the player
+            if (!isJumping && isPlayerGrounded) {
+                float degree = Mathf.Atan2(input.x, input.y) * (180 / Mathf.PI);
+                Quaternion targetRotation = Quaternion.Euler(0, degree, 0);
+                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            }
+
+            // press jump button
+            if (jumpAction.triggered && !isJumping && isPlayerGrounded) {
+                isJumping = true;
+                jumpMovement.y = initialJumpVelocity;
+                audioManager.Play("Jump");
+                jump = true;
+            }
+            /*
+            // press hit button
+            if (hitAction.triggered)
+            {
+                if (isJumping) smash = true;
+                else hit = true;
+            }
+            */
+
+            if (hitAction.WasPerformedThisFrame()) {
+                hitDirection = hitAction.ReadValue<Vector2>();
+            }
+
+            if (hitAction.WasReleasedThisFrame()) {
+
+                float ballx = ball.transform.position.x;
+                float bally = ball.transform.position.y;
+                float ballz = ball.transform.position.z;
+
+                if (ballx > transform.position.x - 100 && ballx < transform.position.x + 100 &&
+                    bally > transform.position.y - 100 && bally < transform.position.y + 100 &&
+                    ballz > transform.position.z - 100 && ballz < transform.position.z + 100) {
+                    ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300, strength * hitDirection.y);
+                }
+                if (isJumping) smash = true;
+                else hit = true;
+            }
+
+            controller.Move(jumpMovement);
+            animator.SetBool("isRun", run);
+            animator.SetBool("isJump", jump);
+            animator.SetBool("isSmash", smash);
+            animator.SetBool("isHit", hit);
+        }
     }
 
     /*
