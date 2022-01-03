@@ -153,7 +153,8 @@ PlayerSettings:
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.GoldenVolleyball
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -777,7 +778,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 1
+  activeInputHandler: 2
   cloudProjectId: e798fc72-b8e7-4ea6-b446-700f09cdcbe8
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []

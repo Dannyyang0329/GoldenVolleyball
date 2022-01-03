@@ -176,7 +176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6382940476924312736}
   m_LocalRotation: {x: 0.15643448, y: -0, z: -0, w: 0.98768836}
-  m_LocalPosition: {x: 0, y: 151.9414, z: -455.13318}
+  m_LocalPosition: {x: 0, y: 151.94142, z: -455.13318}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6382940476722513157}
@@ -243,7 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2904200374568377054}
   - component: {fileID: 1300743978525824116}
-  - component: {fileID: 1323489644168203319}
+  - component: {fileID: 345549516133209059}
   m_Layer: 0
   m_Name: MarioWithCam
   m_TagString: Untagged
@@ -259,7 +259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6806914740544318442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6382940476924312749}
@@ -284,7 +284,7 @@ MonoBehaviour:
   PrefabHashGenerator: MarioWithCam
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
---- !u!114 &1323489644168203319
+--- !u!114 &345549516133209059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,45 +293,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6806914740544318442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 818fc71a4309756478e1c7fc2aea4ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FixedSendsPerSecond: 20
-  AssumeSyncedSends: 1
-  InterpolatePosition: 1
-  SnapDistance: 10
-  InterpolateServer: 1
-  MinMeters: 0.15
-  MinDegrees: 1.5
-  ExtrapolatePosition: 0
-  MaxSendsToExtrapolate: 5
-  Channel: 
-  EnableRange: 0
-  EnableNonProvokedResendChecks: 0
-  DistanceSendrate:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 20
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 500
-      value: 20
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  camera: {fileID: 6382940476924312750}
 --- !u!1001 &1309847906464927323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -387,13 +352,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mario
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7010239818563650331, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
-    - {fileID: 3778705692001625950, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
+--- !u!1 &8253788992979447824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6964494533529714251, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
+  m_PrefabInstance: {fileID: 1309847906464927323}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4958463753416294915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6268310533324590168, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
+  m_PrefabInstance: {fileID: 1309847906464927323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6843798884067963179 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5537049744988471152, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
   m_PrefabInstance: {fileID: 1309847906464927323}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1634596746564610883 stripped
@@ -401,3 +374,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 325036183142769944, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
   m_PrefabInstance: {fileID: 1309847906464927323}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5342996316464679310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8253788992979447824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SendRate: 0.1
+  m_Animator: {fileID: 6843798884067963179}
+  m_TrackedParamFlags: 0
+--- !u!114 &5776953966139987486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8253788992979447824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FixedSendsPerSecond: 20
+  AssumeSyncedSends: 1
+  InterpolatePosition: 1
+  SnapDistance: 10
+  InterpolateServer: 1
+  MinMeters: 0.15
+  MinDegrees: 1.5
+  ExtrapolatePosition: 0
+  MaxSendsToExtrapolate: 5
+  Channel: 
+  EnableRange: 0
+  EnableNonProvokedResendChecks: 0
+  DistanceSendrate:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 500
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

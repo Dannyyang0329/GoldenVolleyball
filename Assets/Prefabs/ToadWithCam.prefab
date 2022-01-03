@@ -243,7 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2802526793298926304}
   - component: {fileID: 8824449652723085116}
-  - component: {fileID: 5801220933381493173}
+  - component: {fileID: 1107602670010365146}
   m_Layer: 0
   m_Name: ToadWithCam
   m_TagString: Untagged
@@ -259,7 +259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6829756397340850919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6606570177297538781}
@@ -284,7 +284,7 @@ MonoBehaviour:
   PrefabHashGenerator: ToadWithCam
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
---- !u!114 &5801220933381493173
+--- !u!114 &1107602670010365146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,45 +293,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6829756397340850919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 818fc71a4309756478e1c7fc2aea4ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FixedSendsPerSecond: 20
-  AssumeSyncedSends: 1
-  InterpolatePosition: 1
-  SnapDistance: 10
-  InterpolateServer: 1
-  MinMeters: 0.15
-  MinDegrees: 1.5
-  ExtrapolatePosition: 0
-  MaxSendsToExtrapolate: 5
-  Channel: 
-  EnableRange: 0
-  EnableNonProvokedResendChecks: 0
-  DistanceSendrate:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 20
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 500
-      value: 20
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  camera: {fileID: 3026211742856993116}
 --- !u!1001 &3683111231367213914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -339,14 +304,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2802526793298926304}
     m_Modifications:
-    - target: {fileID: 3445384170491029672, guid: bc2c0198cb0654400a2bc02d1da1302c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445384170491029672, guid: bc2c0198cb0654400a2bc02d1da1302c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4833040446801831808, guid: bc2c0198cb0654400a2bc02d1da1302c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -395,13 +352,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toad
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3003573268047434192, guid: bc2c0198cb0654400a2bc02d1da1302c, type: 3}
-    - {fileID: 1089448146359220904, guid: bc2c0198cb0654400a2bc02d1da1302c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc2c0198cb0654400a2bc02d1da1302c, type: 3}
+--- !u!1 &8882420233707671136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5213400364837485882, guid: bc2c0198cb0654400a2bc02d1da1302c, type: 3}
+  m_PrefabInstance: {fileID: 3683111231367213914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8074780996061566170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4833040446801831808, guid: bc2c0198cb0654400a2bc02d1da1302c, type: 3}
+  m_PrefabInstance: {fileID: 3683111231367213914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5655789859057881751 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9034340492652978637, guid: bc2c0198cb0654400a2bc02d1da1302c, type: 3}
   m_PrefabInstance: {fileID: 3683111231367213914}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2075451895324597234 stripped
@@ -409,3 +374,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3445384170491029672, guid: bc2c0198cb0654400a2bc02d1da1302c, type: 3}
   m_PrefabInstance: {fileID: 3683111231367213914}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2566261444990787662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8882420233707671136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SendRate: 0.1
+  m_Animator: {fileID: 5655789859057881751}
+  m_TrackedParamFlags: 0
+--- !u!114 &8082056487987791556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8882420233707671136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FixedSendsPerSecond: 20
+  AssumeSyncedSends: 1
+  InterpolatePosition: 1
+  SnapDistance: 10
+  InterpolateServer: 1
+  MinMeters: 0.15
+  MinDegrees: 1.5
+  ExtrapolatePosition: 0
+  MaxSendsToExtrapolate: 5
+  Channel: 
+  EnableRange: 0
+  EnableNonProvokedResendChecks: 0
+  DistanceSendrate:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 500
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
