@@ -123,9 +123,9 @@ public class PlayerController : NetworkBehaviour
                 float bally = ball.transform.position.y;
                 float ballz = ball.transform.position.z;
 
-                if (ballx > transform.position.x - 100 && ballx < transform.position.x + 100 &&
-                    bally > transform.position.y - 100 && bally < transform.position.y + 100 &&
-                    ballz > transform.position.z - 100 && ballz < transform.position.z + 100) {
+                if (ballx > transform.position.x - 180 && ballx < transform.position.x + 180 &&
+                    bally > transform.position.y - 180 && bally < transform.position.y + 180 &&
+                    ballz > transform.position.z - 180 && ballz < transform.position.z + 180) {
                     ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300, strength * hitDirection.y);
                 }
                 if (isJumping) smash = true;
