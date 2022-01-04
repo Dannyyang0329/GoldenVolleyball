@@ -86,9 +86,9 @@ public class PlayerController : NetworkBehaviour
 
             // move the player
             Vector3 move = new Vector3(input.x, 0, input.y).normalized;
-            if (isPlayerGrounded && !isJumping) {
+            //if (isPlayerGrounded && !isJumping) {
                 controller.Move(move * movingSpeed * Time.deltaTime);
-            }
+            //}
 
             // rotate the player
             if (!isJumping && isPlayerGrounded) {
@@ -123,9 +123,9 @@ public class PlayerController : NetworkBehaviour
                 float bally = ball.transform.position.y;
                 float ballz = ball.transform.position.z;
 
-                if (ballx > transform.position.x - 180 && ballx < transform.position.x + 180 &&
-                    bally > transform.position.y - 180 && bally < transform.position.y + 180 &&
-                    ballz > transform.position.z - 180 && ballz < transform.position.z + 180) {
+                if (ballx > transform.position.x - 130 && ballx < transform.position.x + 130 &&
+                    bally > transform.position.y - 130 && bally < transform.position.y + 130 &&
+                    ballz > transform.position.z - 130 && ballz < transform.position.z + 130) {
                     ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300, strength * hitDirection.y);
                 }
                 if (isJumping) smash = true;

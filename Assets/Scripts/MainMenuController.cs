@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour {
-    public static bool isSingle = true;
+    public static bool isSingle = false;
 
     public AudioManager audioManager;
 
