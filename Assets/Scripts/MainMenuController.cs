@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour {
+    public static bool isSingle = true;
+
     public AudioManager audioManager;
 
     private void Start() {
@@ -11,6 +13,16 @@ public class MainMenuController : MonoBehaviour {
 
     public void Quit() {
         Application.Quit();
+    }
+
+    public void SinglePlayer() {
+        GetComponent<LevelLoader>().LoadNextScene1();
+        isSingle = true;
+    }
+
+    public void MultiPlayer() {
+        GetComponent<LevelLoader>().LoadNextScene1();
+        isSingle = false;
     }
 
     public void HoverSound() {
