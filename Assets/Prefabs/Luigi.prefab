@@ -1357,7 +1357,7 @@ MonoBehaviour:
   rotationSpeed: 16
   jumpingSound: {fileID: 8300000, guid: c21c0aa4f1065d54cbd88a4b3afa70ae, type: 3}
   initialJumpVelocity: 5
-  strength: 0
+  strength: 500
   hitDirection: {x: 0, y: 0}
 --- !u!114 &1649642029508302732
 MonoBehaviour:
