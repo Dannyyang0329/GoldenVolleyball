@@ -793,7 +793,7 @@ MonoBehaviour:
   sounds:
   - name: Bgm
     source: {fileID: 0}
-    clip: {fileID: 8300000, guid: 6adde404a55a99a47a9b1cbe3852c294, type: 3}
+    clip: {fileID: 8300000, guid: e6e7ff507e49a214fbead68f91682dd6, type: 3}
     volumn: 0.2
     pitch: 1
     loop: 1
@@ -1345,7 +1345,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c9dfaa75c880d98408f036a4ae294a9f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6db064835915901458e6955be3efa951, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1785,7 +1785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -575, y: -50}
+  m_AnchoredPosition: {x: -525, y: -50}
   m_SizeDelta: {x: 525, y: 850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &846680829
@@ -2185,7 +2185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 575, y: -50}
+  m_AnchoredPosition: {x: 625, y: -50}
   m_SizeDelta: {x: 525, y: 850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &982804069
@@ -4090,7 +4090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 50, y: -50}
   m_SizeDelta: {x: 525, y: 850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1597485513

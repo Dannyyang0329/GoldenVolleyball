@@ -160,8 +160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -275, y: -905}
-  m_SizeDelta: {x: 500, y: 125}
+  m_AnchoredPosition: {x: -275, y: -800}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &72658662
 MonoBehaviour:
@@ -733,18 +733,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 74707536755bf2942b40c94c1d19ca56, type: 3}
-    m_FontSize: 50
+    m_FontSize: 85
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
-    m_MaxSize: 50
+    m_MaxSize: 85
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Multiple
+  m_Text: Start
 --- !u!222 &727825206
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1073,8 +1073,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -275, y: -740}
-  m_SizeDelta: {x: 500, y: 125}
+  m_AnchoredPosition: {x: -275, y: -575}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1543869654
 MonoBehaviour:
@@ -1218,7 +1218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1589461691
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1421,11 +1421,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 74707536755bf2942b40c94c1d19ca56, type: 3}
-    m_FontSize: 50
+    m_FontSize: 85
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
-    m_MaxSize: 50
+    m_MaxSize: 85
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1473,7 +1473,7 @@ MonoBehaviour:
   sounds:
   - name: Bgm
     source: {fileID: 0}
-    clip: {fileID: 8300000, guid: 6adde404a55a99a47a9b1cbe3852c294, type: 3}
+    clip: {fileID: 8300000, guid: 39e22c4efde4e16468ac31a153194b97, type: 3}
     volumn: 0.2
     pitch: 1
     loop: 1
