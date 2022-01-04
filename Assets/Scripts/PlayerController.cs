@@ -123,9 +123,15 @@ public class PlayerController : NetworkBehaviour
                 float bally = ball.transform.position.y;
                 float ballz = ball.transform.position.z;
 
+<<<<<<< HEAD
                 if (ballx > transform.position.x - 130 && ballx < transform.position.x + 130 &&
                     bally > transform.position.y - 130 && bally < transform.position.y + 130 &&
                     ballz > transform.position.z - 130 && ballz < transform.position.z + 130) {
+=======
+                if (ballx > transform.position.x - 100 && ballx < transform.position.x + 100 &&
+                    bally > transform.position.y - 100 && bally < transform.position.y + 100 &&
+                    ballz > transform.position.z - 100 && ballz < transform.position.z + 100) {
+>>>>>>> parent of c4f36b3 (Merge branch 'main' of https://github.com/Dannyyang0329/GoldenVolleyball)
                     ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300, strength * hitDirection.y);
                 }
                 if (isJumping) smash = true;
