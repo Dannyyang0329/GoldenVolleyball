@@ -6,11 +6,11 @@ using MLAPI;
 
 public class SettingCamera : NetworkBehaviour
 {
-    public CinemachineVirtualCamera camera;
+    public CinemachineVirtualCamera theCamera;
 
     private void Start() {
         if (IsLocalPlayer) {
-            camera.Priority += 1;
+            theCamera.Priority += 1;
         }
     }
 }

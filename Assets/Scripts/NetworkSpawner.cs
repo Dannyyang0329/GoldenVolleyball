@@ -13,39 +13,52 @@ public class NetworkSpawner : NetworkBehaviour
     public void SpawnPlayer() 
     {
         ulong id = NetworkManager.Singleton.LocalClientId;
-        Debug.Log(id);
 
-        if (IsHost) {
+        if (NetworkManager.Singleton.IsServer) {
+            Debug.Log("Server");
+
             GameObject obj = Instantiate(prefabs[3], spawnPoint[4], Quaternion.identity).gameObject;
             obj.GetComponent<NetworkObject>().SpawnWithOwnership(NetworkManager.Singleton.LocalClientId, null, true);
 
-            Spawn(id);
+            Spawning(id);
         }
-        else if (NetworkManager.Singleton.IsClient) {
-            SpawnServerRpc(id);
+        else{
+            Debug.Log("Client");
+
+            SpawningServerRpc();
         }
 
     }
 
     [ServerRpc]
-    void SpawnServerRpc(ulong clientId) {
-        Spawn(clientId);
+    void SpawningServerRpc(ServerRpcParams rpcParams = default) {
+        Debug.Log("SpawningServerRpc!");
+        //SpawningClientRpc(id);
     }
 
-    public void Spawn(ulong id) {
-        GameObject obj;
+    [ClientRpc]
+    void SpawningClientRpc(ulong id) {
+        Debug.Log("SpawningClientRpc!");
+        Spawning(id);
+    }
+
+    void Spawning(ulong id) {
+        GameObject obj = null;
 
         if(SelectCharacterController.selectedPlayer == "Mario") {
             obj = Instantiate(prefabs[0], spawnPoint[0], Quaternion.identity).gameObject;
             obj.GetComponent<NetworkObject>().SpawnAsPlayerObject(id, null, true);
+            //obj.GetComponent<NetworkObject>().SpawnWithOwnership(id, null, true);
         }
-        if(SelectCharacterController.selectedPlayer == "Luigi") {
+        else if(SelectCharacterController.selectedPlayer == "Luigi") {
             obj = Instantiate(prefabs[1], spawnPoint[1], Quaternion.identity).gameObject;
             obj.GetComponent<NetworkObject>().SpawnAsPlayerObject(id, null, true);
+            //obj.GetComponent<NetworkObject>().SpawnWithOwnership(id, null, true);
         }
-        if(SelectCharacterController.selectedPlayer == "Toad") {
+        else if(SelectCharacterController.selectedPlayer == "Toad") {
             obj = Instantiate(prefabs[2], spawnPoint[2], Quaternion.identity).gameObject;
             obj.GetComponent<NetworkObject>().SpawnAsPlayerObject(id, null, true);
+            //obj.GetComponent<NetworkObject>().SpawnWithOwnership(id, null, true);
         }
     }
 }
