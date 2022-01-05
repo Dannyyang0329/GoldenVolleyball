@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 using MLAPI;
+using MLAPI.Transports.UNET;
+using UnityEngine.UI;
 
 public class GameManager : NetworkBehaviour
 {
@@ -11,11 +13,17 @@ public class GameManager : NetworkBehaviour
     public Animator roundCamAnim;
     public CinemachineVirtualCamera roundCam;
 
+    public string ipAddress;
+    private UNetTransport transport;
+
     private void Start() {
         multiPlayerUI.SetActive(true);
     }
 
     public void Game_Host() {
+        transport = NetworkManager.Singleton.GetComponent<UNetTransport>();
+        transport.ConnectAddress = ipAddress;
+
         NetworkManager.Singleton.StartHost();
 
         multiPlayerUI.SetActive(false);
@@ -24,6 +32,9 @@ public class GameManager : NetworkBehaviour
     }
 
     public void Game_Client() {
+        transport = NetworkManager.Singleton.GetComponent<UNetTransport>();
+        transport.ConnectAddress = ipAddress;
+
         NetworkManager.Singleton.StartClient();
 
         multiPlayerUI.SetActive(false);
@@ -31,11 +42,14 @@ public class GameManager : NetworkBehaviour
         roundCamAnim.SetTrigger("Start");
     }
 
+    public void SetIpAddress(string newAddress) {
+        this.ipAddress = newAddress;
+    }
+
     private void Update() {
         if(roundCam.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathPosition >= 20) {
             roundCam.Priority = 0;
         }      
-
-        // if(NetworkManager.)
     }
+
 }
