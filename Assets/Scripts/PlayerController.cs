@@ -122,11 +122,15 @@ public class PlayerController : NetworkBehaviour
                 float ballx = ball.transform.position.x;
                 float bally = ball.transform.position.y;
                 float ballz = ball.transform.position.z;
+                float distance = Mathf.Sqrt(Mathf.Pow(hitDirection.x,2)+Mathf.Pow(hitDirection.y,2));
 
                 if (ballx > transform.position.x - 150 && ballx < transform.position.x + 150 &&
                     bally > transform.position.y - 150 && bally < transform.position.y + 150 &&
-                    ballz > transform.position.z - 150 && ballz < transform.position.z + 150) {
-                    ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300, strength * hitDirection.y);
+                    ballz > transform.position.z - 150 && ballz < transform.position.z + 150)
+                {
+                    ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300 * distance, strength * hitDirection.y);
+                    ball.GetComponent<BallController>().startJudge = true;
+                    ball.GetComponent<BallController>().beenHit = true;
                 }
                 if (isJumping) smash = true;
                 else hit = true;
