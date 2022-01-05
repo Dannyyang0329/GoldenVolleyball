@@ -1055,7 +1055,7 @@ MonoBehaviour:
   MessageBufferSize: 5120
   MaxConnections: 4
   MaxSentMessageQueueSize: 128
-  ConnectAddress: 192.168.31.118
+  ConnectAddress: 127.0.0.1
   ConnectPort: 7777
   ServerListenPort: 7777
   ServerWebsocketListenPort: 8887
@@ -1092,12 +1092,12 @@ MonoBehaviour:
     - Prefab: {fileID: 6806914740544318442, guid: d648a0fff14a3474cacf2141668558f4, type: 3}
       PlayerPrefab: 0
     - Prefab: {fileID: 7431809584916001549, guid: 062074f871260504c9063ba255646e51, type: 3}
-      PlayerPrefab: 1
+      PlayerPrefab: 0
     - Prefab: {fileID: 602227159}
       PlayerPrefab: 0
     PlayerPrefabHash:
       id: 0
-    CreatePlayerPrefab: 1
+    CreatePlayerPrefab: 0
     ReceiveTickrate: 64
     NetworkTickIntervalSec: 0.05
     MaxReceiveEventsPerTickRate: 500
@@ -1122,9 +1122,7 @@ MonoBehaviour:
   references:
     version: 1
     00000000:
-      type: {class: NullableBoolSerializable, ns: MLAPI.Configuration, asm: Unity.Multiplayer.MLAPI.Runtime}
-      data:
-        Value: 11010923034228132494
+      type: {class: , ns: , asm: }
 --- !u!4 &780962456
 Transform:
   m_ObjectHideFlags: 0
@@ -1895,6 +1893,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1285927468}
   - component: {fileID: 1285927467}
+  - component: {fileID: 1285927469}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1932,6 +1931,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1285927469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285927466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e4786e6c3d26d41b4b1724e96cefd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint:
+  - {x: 75, y: 10, z: -200}
+  - {x: -75, y: 10, z: -200}
+  - {x: 75, y: 10, z: 200}
+  - {x: -75, y: 10, z: 200}
+  - {x: 0, y: 500, z: 0}
+  prefabs:
+  - {fileID: 6806914740544318442, guid: d648a0fff14a3474cacf2141668558f4, type: 3}
+  - {fileID: 7431809584916001549, guid: 062074f871260504c9063ba255646e51, type: 3}
+  - {fileID: 6829756397340850919, guid: d490fec188bf6164f8f13cf493276a6d, type: 3}
+  - {fileID: 1573650765451305429, guid: b6331e69b10d56549a03f8ddc7b3c94e, type: 3}
 --- !u!1 &1315164925
 GameObject:
   m_ObjectHideFlags: 0
@@ -40799,6 +40821,10 @@ PrefabInstance:
     - target: {fileID: 1573650765451305429, guid: b6331e69b10d56549a03f8ddc7b3c94e, type: 3}
       propertyPath: m_Name
       value: Volleyball
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573650765451305429, guid: b6331e69b10d56549a03f8ddc7b3c94e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1573650765451305434, guid: b6331e69b10d56549a03f8ddc7b3c94e, type: 3}
       propertyPath: m_RootOrder

@@ -67,7 +67,7 @@ public class PlayerController : NetworkBehaviour
         cine_camera.GetComponent<Cinemachine.CinemachineVirtualCamera>().LookAt = transform.GetChild(0);
         */
 
-        ball = GameObject.Find("volleyball");
+        ball = GameObject.FindGameObjectWithTag("Ball").transform.GetChild(0).gameObject;
     }
 
     void Update()
@@ -123,9 +123,9 @@ public class PlayerController : NetworkBehaviour
                 float bally = ball.transform.position.y;
                 float ballz = ball.transform.position.z;
 
-                if (ballx > transform.position.x - 180 && ballx < transform.position.x + 180 &&
-                    bally > transform.position.y - 180 && bally < transform.position.y + 180 &&
-                    ballz > transform.position.z - 180 && ballz < transform.position.z + 180) {
+                if (ballx > transform.position.x - 150 && ballx < transform.position.x + 150 &&
+                    bally > transform.position.y - 150 && bally < transform.position.y + 150 &&
+                    ballz > transform.position.z - 150 && ballz < transform.position.z + 150) {
                     ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300, strength * hitDirection.y);
                 }
                 if (isJumping) smash = true;

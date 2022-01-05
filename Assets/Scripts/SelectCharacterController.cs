@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SelectCharacterController : MonoBehaviour
 {
-    public static string selectedPlayer;
+    public static string selectedPlayer = "Mario";
 
     public AudioManager audioManager;
     public Animator marioAnim;

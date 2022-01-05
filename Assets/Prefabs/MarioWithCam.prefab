@@ -207,7 +207,7 @@ MonoBehaviour:
     FieldOfView: 60
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 2000
+    FarClipPlane: 2500
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -304,6 +304,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2904200374568377054}
     m_Modifications:
+    - target: {fileID: 5537049744988471164, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
+      propertyPath: strength
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 6268310533324590168, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
       propertyPath: m_RootOrder
       value: 1

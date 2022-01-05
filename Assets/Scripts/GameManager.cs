@@ -13,7 +13,7 @@ public class GameManager : NetworkBehaviour
     public Animator roundCamAnim;
     public CinemachineVirtualCamera roundCam;
 
-    public string ipAddress;
+    public string ipAddress = "127.0.0.1";
     private UNetTransport transport;
 
     private void Start() {
@@ -25,6 +25,7 @@ public class GameManager : NetworkBehaviour
         transport.ConnectAddress = ipAddress;
 
         NetworkManager.Singleton.StartHost();
+        GetComponent<NetworkSpawner>().SpawnPlayer();
 
         multiPlayerUI.SetActive(false);
 
@@ -36,6 +37,7 @@ public class GameManager : NetworkBehaviour
         transport.ConnectAddress = ipAddress;
 
         NetworkManager.Singleton.StartClient();
+        GetComponent<NetworkSpawner>().SpawnPlayer();
 
         multiPlayerUI.SetActive(false);
 
