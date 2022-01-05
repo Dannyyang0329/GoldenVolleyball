@@ -19,36 +19,33 @@ public class NetworkSpawner : NetworkBehaviour
             GameObject obj = Instantiate(prefabs[3], spawnPoint[4], Quaternion.identity).gameObject;
             obj.GetComponent<NetworkObject>().SpawnWithOwnership(NetworkManager.Singleton.LocalClientId, null, true);
 
-            Spawn();
+            Spawn(id);
         }
         else if (NetworkManager.Singleton.IsClient) {
-            SpawnServerRpc();
-            Debug.Log("Success");
+            SpawnServerRpc(id);
         }
 
     }
 
     [ServerRpc]
-    void SpawnServerRpc(ServerRpcParams rpcParams = default) {
-        Spawn();
+    void SpawnServerRpc(ulong clientId) {
+        Spawn(clientId);
     }
 
-    public void Spawn() {
+    public void Spawn(ulong id) {
         GameObject obj;
-
-        Debug.Log("A");
 
         if(SelectCharacterController.selectedPlayer == "Mario") {
             obj = Instantiate(prefabs[0], spawnPoint[0], Quaternion.identity).gameObject;
-            obj.GetComponent<NetworkObject>().SpawnAsPlayerObject(NetworkManager.Singleton.LocalClientId, null, true);
+            obj.GetComponent<NetworkObject>().SpawnAsPlayerObject(id, null, true);
         }
         if(SelectCharacterController.selectedPlayer == "Luigi") {
             obj = Instantiate(prefabs[1], spawnPoint[1], Quaternion.identity).gameObject;
-            obj.GetComponent<NetworkObject>().SpawnAsPlayerObject(NetworkManager.Singleton.LocalClientId, null, true);
+            obj.GetComponent<NetworkObject>().SpawnAsPlayerObject(id, null, true);
         }
         if(SelectCharacterController.selectedPlayer == "Toad") {
             obj = Instantiate(prefabs[2], spawnPoint[2], Quaternion.identity).gameObject;
-            obj.GetComponent<NetworkObject>().SpawnAsPlayerObject(NetworkManager.Singleton.LocalClientId, null, true);
+            obj.GetComponent<NetworkObject>().SpawnAsPlayerObject(id, null, true);
         }
     }
 }
