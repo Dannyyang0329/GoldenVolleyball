@@ -179,11 +179,20 @@ public class PlayerController : NetworkBehaviour
             ballz > transform.position.z - 150 && ballz < transform.position.z + 150 &&
             ball.GetComponent<BallController>().canHit)
         {
-            Vector3 newVelocity = new Vector3(strength * inputDir.x, 300 * distance, strength * inputDir.y);
-            ball.GetComponent<Rigidbody>().velocity = newVelocity;
-            /*ball.GetComponent<BallController>().setStart();
-            ball.GetComponent<BallController>().beenHit = true;
-            */
+            if (!isJumping)
+            {
+                Vector3 newVelocity = new Vector3(strength * inputDir.x, 300 * distance, strength * inputDir.y);
+                //Vector3 newVelocity = new Vector3(0, 300 * distance, 0);
+                ball.GetComponent<Rigidbody>().velocity = newVelocity;
+                /*ball.GetComponent<BallController>().setStart();
+                ball.GetComponent<BallController>().beenHit = true;
+                */
+            }
+            else
+            {
+                Vector3 newVelocity = new Vector3(2* strength * inputDir.x, -500 * distance, 2 * strength * inputDir.y);
+                ball.GetComponent<Rigidbody>().velocity = newVelocity;
+            }
         }
     }
 

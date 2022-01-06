@@ -139,7 +139,7 @@ public class BallController : MonoBehaviour
             transform.position = new Vector3(0, 100, 200);
         }
         canHit = true;
-        Debug.Log("----");
+        Debug.Log("reset");
     }
 
     public void setStart()
