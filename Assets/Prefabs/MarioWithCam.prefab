@@ -305,6 +305,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2904200374568377054}
     m_Modifications:
     - target: {fileID: 5537049744988471164, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
+      propertyPath: strength
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537049744988471164, guid: 4b871e8909f794844a231aa29efd4b0a, type: 3}
       propertyPath: initialJumpVelocity
       value: 35
       objectReference: {fileID: 0}

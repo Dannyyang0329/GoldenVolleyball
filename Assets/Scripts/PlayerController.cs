@@ -130,7 +130,7 @@ public class PlayerController : NetworkBehaviour
                     ball.GetComponent<BallController>().canHit)
                 {
                     ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300 * distance, strength * hitDirection.y);
-                    ball.GetComponent<BallController>().startJudge = true;
+                    ball.GetComponent<BallController>().setStart();
                     ball.GetComponent<BallController>().beenHit = true;
                 }
                 if (isJumping) smash = true;
