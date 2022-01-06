@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MLAPI;
 
-public class NetworkingManager : MonoBehaviour 
+public class NetworkingManager : NetworkManager 
 {
     private void OnGUI() {
         GUILayout.BeginArea(new Rect(10, 10, 300, 300));

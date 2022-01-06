@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class GameManager : NetworkBehaviour
 {
+    public static bool isStart = false;
+
     public GameObject multiPlayerUI;
 
     public Animator roundCamAnim;
@@ -25,7 +27,8 @@ public class GameManager : NetworkBehaviour
         transport.ConnectAddress = ipAddress;
 
         NetworkManager.Singleton.StartHost();
-        GetComponent<NetworkSpawner>().SpawnPlayer();
+        isStart = true;
+        //GetComponent<NetworkSpawner>().SpawnPlayer();
 
         multiPlayerUI.SetActive(false);
 
@@ -37,7 +40,8 @@ public class GameManager : NetworkBehaviour
         transport.ConnectAddress = ipAddress;
 
         NetworkManager.Singleton.StartClient();
-        GetComponent<NetworkSpawner>().SpawnPlayer();
+        isStart = true;
+        //GetComponent<NetworkSpawner>().SpawnPlayer();
 
         multiPlayerUI.SetActive(false);
 
