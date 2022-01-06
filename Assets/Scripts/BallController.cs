@@ -7,6 +7,7 @@ public class BallController : MonoBehaviour
     int courtNum;
     public bool beenHit = false;
     public bool startJudge;
+    public bool canHit;
     int p1Score;
     int p2Score;
     int lastWinner;
@@ -20,7 +21,8 @@ public class BallController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         startJudge = false;
         lastWinner = 1;
-        transform.position = new Vector3(0, 15, -200);
+        transform.position = new Vector3(0, 0, -200);
+        canHit = true;
     }
 
     // Update is called once per frame
@@ -38,11 +40,6 @@ public class BallController : MonoBehaviour
             courtNum = 2;
         }
 
-        if (characterController.isGrounded && startJudge)
-        {
-            startJudge = false;
-            judgeWinner();
-        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -50,12 +47,12 @@ public class BallController : MonoBehaviour
         if (collision.gameObject.CompareTag("OutOfCourt")&&startJudge)
         {
             startJudge = false;
-            judgeWinner();
+            judgeOutWinner();
         }
         else if (collision.gameObject.CompareTag("Ground") && startJudge)
         {
             startJudge = false;
-            judgeWinner();
+            judgeInWinner();
         }
     }
 
@@ -64,12 +61,14 @@ public class BallController : MonoBehaviour
         if (other.gameObject.CompareTag("OutOfCourt")&&startJudge)
         {
             startJudge = false;
-            judgeWinner();
+            judgeOutWinner();
         }
     }
 
-    private void judgeWinner()
+    private void judgeOutWinner()
     {
+        Debug.Log("win");
+        canHit = false;
         if (courtNum == 1 && beenHit) // 2 win
         {
             p2Score++;
@@ -97,16 +96,61 @@ public class BallController : MonoBehaviour
         }
         else
         {
-            GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-            if (lastWinner == 1)
-            {
-                transform.position = new Vector3(0, 0, -200);
-
-            }
-            else
-            {
-                transform.position = new Vector3(0, 0, 200);
-            }
+            //GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            Invoke("setPosition", 10);
+            
         }
+    }
+
+    private void judgeInWinner()
+    {
+        Debug.Log("win");
+        canHit = false;
+        if (courtNum == 1) // 2 win
+        {
+            p2Score++;
+            lastWinner = 2;
+        }
+        else if (courtNum == 2) // 1 win
+        {
+            p1Score++;
+            lastWinner = 1;
+        }
+
+        if (p1Score == 5 || p2Score == 5)
+        {
+            //endGame();
+        }
+        else
+        {
+            //GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            Invoke("setPosition", 10);
+
+        }
+    }
+
+    private void setPosition()
+    {
+        if (lastWinner == 1)
+        {
+            transform.position = new Vector3(0, 100, -200);
+
+        }
+        else
+        {
+            transform.position = new Vector3(0, 100, 200);
+        }
+        canHit = true;
+        Debug.Log("----");
+    }
+
+    public void setStart()
+    {
+        Invoke("openJudge", Time.deltaTime);
+    }
+
+    private void openJudge()
+    {
+        startJudge = true;
     }
 }

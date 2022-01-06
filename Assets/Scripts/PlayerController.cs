@@ -126,7 +126,8 @@ public class PlayerController : NetworkBehaviour
 
                 if (ballx > transform.position.x - 150 && ballx < transform.position.x + 150 &&
                     bally > transform.position.y - 150 && bally < transform.position.y + 150 &&
-                    ballz > transform.position.z - 150 && ballz < transform.position.z + 150)
+                    ballz > transform.position.z - 150 && ballz < transform.position.z + 150 &&
+                    ball.GetComponent<BallController>().canHit)
                 {
                     ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300 * distance, strength * hitDirection.y);
                     ball.GetComponent<BallController>().startJudge = true;
