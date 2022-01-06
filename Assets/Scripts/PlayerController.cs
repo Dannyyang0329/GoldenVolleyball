@@ -22,7 +22,7 @@ public class PlayerController : NetworkBehaviour
     [SerializeField] private float rotationSpeed = 16f;
 
     // Gravity Variables
-    private float gravityValue = -0.16f;
+    private float gravityValue = -6f;
     private float groundedGravity = -0.05f;                            
 
     // Jumping Variables

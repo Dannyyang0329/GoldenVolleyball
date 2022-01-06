@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: strength
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 5683248779547787726, guid: 059839b05f8ca4dcb834ef20d0da02fc, type: 3}
+      propertyPath: initialJumpVelocity
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059839b05f8ca4dcb834ef20d0da02fc, type: 3}
 --- !u!4 &5848085449879636395 stripped
