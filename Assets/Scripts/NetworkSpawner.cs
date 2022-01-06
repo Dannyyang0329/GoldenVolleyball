@@ -11,14 +11,14 @@ public class NetworkSpawner : NetworkBehaviour
     public NetworkObject[] prefabs;
 
     private void Start() {
-        SpawnPlayer();
-        Destroy(gameObject);
+        if(IsLocalPlayer) {
+            SpawnPlayer();
+            Destroy(gameObject);
+        }
     }
 
     public void SpawnPlayer() 
     {
-        if (!GameManager.isStart) return;
-
         ulong id = NetworkManager.Singleton.LocalClientId;
 
         if (NetworkManager.Singleton.IsServer) {
@@ -32,8 +32,8 @@ public class NetworkSpawner : NetworkBehaviour
         else{
             Debug.Log("Client");
 
-            SpawningClientRpc(id);
-            //SpawningServerRpc(id);
+            //SpawningClientRpc(id);
+            SpawningServerRpc(id);
         }
     }
 
