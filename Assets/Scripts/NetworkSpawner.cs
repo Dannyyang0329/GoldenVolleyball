@@ -32,7 +32,6 @@ public class NetworkSpawner : NetworkBehaviour
         else{
             Debug.Log("Client");
 
-            //SpawningClientRpc(id);
             SpawningServerRpc(id);
         }
     }
@@ -41,29 +40,24 @@ public class NetworkSpawner : NetworkBehaviour
     void SpawningServerRpc(ulong id) {
         Debug.Log("Spawn");
         Spawning(id);
-        //SpawningClientRpc(id);
     }
 
-    [ClientRpc]
-    void SpawningClientRpc(ulong id) {
-        Debug.Log("SpawningClientRpc!");
-        Spawning(id);
-    }
 
     void Spawning(ulong id) {
         NetworkObject obj = null;
+        Debug.Log(SelectCharacterController.selectedPlayer.Value);
 
-        if(SelectCharacterController.selectedPlayer == "Mario") {
+        if(SelectCharacterController.selectedPlayer.Value == "Mario") {
             obj = Instantiate(prefabs[0], spawnPoint[0], Quaternion.identity);
             obj.SpawnAsPlayerObject(id);
             //obj.GetComponent<NetworkObject>().SpawnWithOwnership(id, null, true);
         }
-        else if(SelectCharacterController.selectedPlayer == "Luigi") {
+        else if(SelectCharacterController.selectedPlayer.Value == "Luigi") {
             obj = Instantiate(prefabs[1], spawnPoint[1], Quaternion.identity);
             obj.SpawnAsPlayerObject(id);
             //obj.GetComponent<NetworkObject>().SpawnWithOwnership(id, null, true);
         }
-        else if(SelectCharacterController.selectedPlayer == "Toad") {
+        else if(SelectCharacterController.selectedPlayer.Value == "Toad") {
             obj = Instantiate(prefabs[2], spawnPoint[2], Quaternion.identity);
             obj.SpawnAsPlayerObject(id);
             //obj.GetComponent<NetworkObject>().SpawnWithOwnership(id, null, true);

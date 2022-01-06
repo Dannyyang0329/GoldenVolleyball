@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using MLAPI;
+using MLAPI.Messaging;
 
 [RequireComponent(typeof(CharacterController), typeof(PlayerInput))]
 public class PlayerController : NetworkBehaviour
@@ -118,21 +119,13 @@ public class PlayerController : NetworkBehaviour
             }
 
             if (hitAction.WasReleasedThisFrame()) {
-
-                float ballx = ball.transform.position.x;
-                float bally = ball.transform.position.y;
-                float ballz = ball.transform.position.z;
-                float distance = Mathf.Sqrt(Mathf.Pow(hitDirection.x,2)+Mathf.Pow(hitDirection.y,2));
-
-                if (ballx > transform.position.x - 150 && ballx < transform.position.x + 150 &&
-                    bally > transform.position.y - 150 && bally < transform.position.y + 150 &&
-                    ballz > transform.position.z - 150 && ballz < transform.position.z + 150 &&
-                    ball.GetComponent<BallController>().canHit)
-                {
-                    ball.GetComponent<Rigidbody>().velocity = new Vector3(strength * hitDirection.x, 300 * distance, strength * hitDirection.y);
-                    ball.GetComponent<BallController>().setStart();
-                    ball.GetComponent<BallController>().beenHit = true;
+                if (IsHost) {
+                    PlayerHit(hitDirection);
                 }
+                else {
+                    HitServerRpc(hitDirection);
+                }
+
                 if (isJumping) smash = true;
                 else hit = true;
             }
@@ -165,4 +158,33 @@ public class PlayerController : NetworkBehaviour
         if (isPlayerGrounded) jumpMovement.y = groundedGravity;
         else jumpMovement.y += gravityValue;
     }
+
+
+    [ServerRpc]
+    void HitServerRpc(Vector2 inputDir) 
+    {
+        Debug.Log("Client hit");
+        PlayerHit(inputDir);
+    }
+
+    void PlayerHit(Vector2 inputDir) {
+        Debug.Log("Hit success");
+        float ballx = ball.transform.position.x;
+        float bally = ball.transform.position.y;
+        float ballz = ball.transform.position.z;
+        float distance = Mathf.Sqrt(Mathf.Pow(inputDir.x,2)+Mathf.Pow(inputDir.y,2));
+
+        if (ballx > transform.position.x - 150 && ballx < transform.position.x + 150 &&
+            bally > transform.position.y - 150 && bally < transform.position.y + 150 &&
+            ballz > transform.position.z - 150 && ballz < transform.position.z + 150 &&
+            ball.GetComponent<BallController>().canHit)
+        {
+            Vector3 newVelocity = new Vector3(strength * inputDir.x, 300 * distance, strength * inputDir.y);
+            ball.GetComponent<Rigidbody>().velocity = newVelocity;
+            /*ball.GetComponent<BallController>().setStart();
+            ball.GetComponent<BallController>().beenHit = true;
+            */
+        }
+    }
+
 }

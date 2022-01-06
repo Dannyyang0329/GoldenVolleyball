@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MLAPI;
+using MLAPI.NetworkVariable;
 
-public class SelectCharacterController : MonoBehaviour
+public class SelectCharacterController : NetworkBehaviour
 {
-    public static string selectedPlayer = "Mario";
+    public static NetworkVariableString selectedPlayer = new NetworkVariableString("Mario");
 
     public AudioManager audioManager;
     public Animator marioAnim;
@@ -20,7 +22,7 @@ public class SelectCharacterController : MonoBehaviour
         audioManager.Play("Luigi_Sound");
         luigiAnim.SetTrigger("Start");
 
-        selectedPlayer = "Luigi";
+        selectedPlayer.Value = "Luigi";
     }
 
     public void PlayMario() {
@@ -28,7 +30,7 @@ public class SelectCharacterController : MonoBehaviour
         audioManager.Play("Mario_Sound");
         marioAnim.SetTrigger("Start");
 
-        selectedPlayer = "Mario";
+        selectedPlayer.Value = "Mario";
     }
 
     public void PlayToad() {
@@ -36,7 +38,7 @@ public class SelectCharacterController : MonoBehaviour
         audioManager.Play("Toad_Sound");
         toadAnim.SetTrigger("Start");
 
-        selectedPlayer = "Toad";
+        selectedPlayer.Value = "Toad";
     }
 
     private void Quiet() {

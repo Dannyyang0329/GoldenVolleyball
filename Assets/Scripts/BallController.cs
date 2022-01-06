@@ -11,14 +11,12 @@ public class BallController : MonoBehaviour
     int p1Score;
     int p2Score;
     int lastWinner;
-    CharacterController characterController;
 
     // Start is called before the first frame update
     void Start()
     {
         p1Score = 0;
         p2Score = 0;
-        characterController = GetComponent<CharacterController>();
         startJudge = false;
         lastWinner = 1;
         transform.position = new Vector3(0, 0, -200);
@@ -146,7 +144,7 @@ public class BallController : MonoBehaviour
 
     public void setStart()
     {
-        Invoke("openJudge", Time.deltaTime);
+        Invoke("openJudge", Time.deltaTime * 10);
     }
 
     private void openJudge()
