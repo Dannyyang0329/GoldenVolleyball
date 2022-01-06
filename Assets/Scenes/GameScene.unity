@@ -1602,6 +1602,12 @@ MonoBehaviour:
     volumn: 0.2
     pitch: 1
     loop: 1
+  - name: Hit
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: fdcc2f46e52e84f8590fdc9278d9464e, type: 3}
+    volumn: 1
+    pitch: 1
+    loop: 0
 --- !u!4 &938338659
 Transform:
   m_ObjectHideFlags: 0

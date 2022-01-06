@@ -179,6 +179,7 @@ public class PlayerController : NetworkBehaviour
             ballz > transform.position.z - 150 && ballz < transform.position.z + 150 &&
             ball.GetComponent<BallController>().canHit)
         {
+            audioManager.Play("Hit");
             if (!isJumping)
             {
                 Vector3 newVelocity = new Vector3(strength * inputDir.x, 300 * distance, strength * inputDir.y);
