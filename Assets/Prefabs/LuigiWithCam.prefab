@@ -176,7 +176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7118437570579499150}
   m_LocalRotation: {x: 0.15643448, y: -0, z: -0, w: 0.98768836}
-  m_LocalPosition: {x: 0, y: 151.94142, z: -455.13318}
+  m_LocalPosition: {x: 0, y: 150.04141, z: -155.13318}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7495289851043481095}
@@ -259,7 +259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7431809584916001549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5848085449879636395}
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 818fc71a4309756478e1c7fc2aea4ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 2162176588249569424}
+  theCamera: {fileID: 2162176588249569424}
 --- !u!1001 &4865007350815564173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -314,11 +314,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1345284172086929446, guid: 059839b05f8ca4dcb834ef20d0da02fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1345284172086929446, guid: 059839b05f8ca4dcb834ef20d0da02fc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -300
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1345284172086929446, guid: 059839b05f8ca4dcb834ef20d0da02fc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -358,19 +358,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059839b05f8ca4dcb834ef20d0da02fc, type: 3}
---- !u!1 &6513122156594107153 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1864693102229467804, guid: 059839b05f8ca4dcb834ef20d0da02fc, type: 3}
-  m_PrefabInstance: {fileID: 4865007350815564173}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5848085449879636395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1345284172086929446, guid: 059839b05f8ca4dcb834ef20d0da02fc, type: 3}
-  m_PrefabInstance: {fileID: 4865007350815564173}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &6537828480667678974 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1817468761769662835, guid: 059839b05f8ca4dcb834ef20d0da02fc, type: 3}
   m_PrefabInstance: {fileID: 4865007350815564173}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &7422743940846171893 stripped
@@ -378,66 +368,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2630410190391285624, guid: 059839b05f8ca4dcb834ef20d0da02fc, type: 3}
   m_PrefabInstance: {fileID: 4865007350815564173}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3604778421713964353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6513122156594107153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FixedSendsPerSecond: 20
-  AssumeSyncedSends: 1
-  InterpolatePosition: 1
-  SnapDistance: 10
-  InterpolateServer: 1
-  MinMeters: 0.15
-  MinDegrees: 1.5
-  ExtrapolatePosition: 0
-  MaxSendsToExtrapolate: 5
-  Channel: 
-  EnableRange: 0
-  EnableNonProvokedResendChecks: 0
-  DistanceSendrate:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 20
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 500
-      value: 20
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &6824759129048616341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6513122156594107153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SendRate: 0.1
-  m_Animator: {fileID: 6537828480667678974}
-  m_TrackedParamFlags: 0

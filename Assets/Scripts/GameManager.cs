@@ -25,7 +25,7 @@ public class GameManager : NetworkBehaviour
         transport.ConnectAddress = ipAddress;
 
         NetworkManager.Singleton.StartHost();
-        GetComponent<NetworkSpawner>().SpawnPlayer();
+        //GetComponent<NetworkSpawner>().SpawnPlayer();
 
         multiPlayerUI.SetActive(false);
 
@@ -37,7 +37,7 @@ public class GameManager : NetworkBehaviour
         transport.ConnectAddress = ipAddress;
 
         NetworkManager.Singleton.StartClient();
-        GetComponent<NetworkSpawner>().SpawnPlayer();
+        //GetComponent<NetworkSpawner>().SpawnPlayer();
 
         multiPlayerUI.SetActive(false);
 
