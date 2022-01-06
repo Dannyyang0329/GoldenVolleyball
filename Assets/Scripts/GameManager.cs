@@ -17,6 +17,8 @@ public class GameManager : NetworkBehaviour
     private UNetTransport transport;
 
     private void Start() {
+
+        GameObject.FindObjectOfType<AudioManager>().Play("Bgm");
         multiPlayerUI.SetActive(true);
     }
 
