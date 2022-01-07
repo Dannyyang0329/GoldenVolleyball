@@ -1906,7 +1906,7 @@ MonoBehaviour:
     loop: 0
   - name: Bgm
     source: {fileID: 0}
-    clip: {fileID: 8300000, guid: 63bf748bfb51c4f5f90931c033529df4, type: 3}
+    clip: {fileID: 8300000, guid: df791f5a86cfa4f3d8f3c018cd56a663, type: 3}
     volumn: 0.2
     pitch: 1
     loop: 1

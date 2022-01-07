@@ -89,9 +89,9 @@ public class PlayerController : NetworkBehaviour
 
             // move the player
             Vector3 move = new Vector3(input.x, 0, input.y).normalized;
-            if (isPlayerGrounded && !isJumping) {
+//            if (isPlayerGrounded && !isJumping) {
                 controller.Move(move * movingSpeed * Time.deltaTime);
-            }
+//            }
 
             // rotate the player
             if (!isJumping && isPlayerGrounded) {

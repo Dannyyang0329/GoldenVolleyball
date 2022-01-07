@@ -113,7 +113,7 @@ public class BallController : MonoBehaviour
         else
         {
             //GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-            Invoke("setPosition", 10);
+            Invoke("setPosition", 6);
             resetSecond = 11;
             resetTime.text = "Reset Time : " + string.Format("{0:00}", 0) + " : " + string.Format("{0:00}", (int)resetSecond);
             resetTime.enabled = true;
