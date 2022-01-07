@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BallController : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class BallController : MonoBehaviour
     int p1Score;
     int p2Score;
     int lastWinner;
+    float resetSecond;
+    Text resetTime;
+    GameObject endGamePanel;
 
     // Start is called before the first frame update
     void Start()
@@ -21,12 +25,22 @@ public class BallController : MonoBehaviour
         lastWinner = 1;
         transform.position = new Vector3(0, 0, -200);
         canHit = true;
+        resetTime = GameObject.Find("ResetTime").GetComponent<Text>();
+        endGamePanel = GameObject.Find("EndGame");
+        resetTime.enabled = false;
+        endGamePanel.SetActive(false); ;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (resetTime.enabled)
+        {
+            resetSecond -= Time.deltaTime;
+            resetTime.text = "Reset Time : " + string.Format("{0:00}", 0) + " : " + string.Format("{0:00}", (int)resetSecond);
+            if (resetSecond < 1) resetTime.enabled = false;
+        }
+
         if (transform.position.z < 0)
         {
             if (courtNum == 2) beenHit = false;
@@ -88,15 +102,18 @@ public class BallController : MonoBehaviour
             lastWinner = 2;
         }
 
-        if (p1Score == 5 || p2Score == 5)
+        if (p1Score == 25 || p2Score == 25)
         {
-            //endGame();
+            Time.timeScale = 0;
+            endGame();
         }
         else
         {
             //GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
             Invoke("setPosition", 10);
-            
+            resetSecond = 11;
+            resetTime.text = "Reset Time : " + string.Format("{0:00}", 0) + " : " + string.Format("{0:00}", (int)resetSecond);
+            resetTime.enabled = true;
         }
     }
 
@@ -115,15 +132,18 @@ public class BallController : MonoBehaviour
             lastWinner = 1;
         }
 
-        if (p1Score == 5 || p2Score == 5)
+        if (p1Score == 25 || p2Score == 25)
         {
-            //endGame();
+            Time.timeScale = 0;
+            endGame();
         }
         else
         {
             //GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
             Invoke("setPosition", 10);
-
+            resetSecond = 11;
+            resetTime.text = "Reset Time : " + string.Format("{0:00}", 0) + " : " + string.Format("{0:00}", (int)resetSecond);
+            resetTime.enabled = true;
         }
     }
 
@@ -150,5 +170,10 @@ public class BallController : MonoBehaviour
     private void openJudge()
     {
         startJudge = true;
+    }
+
+    private void endGame()
+    {
+        endGamePanel.SetActive(true);
     }
 }
