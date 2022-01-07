@@ -185,9 +185,9 @@ public class PlayerController : NetworkBehaviour
                 Vector3 newVelocity = new Vector3(strength * inputDir.x, 300 * distance, strength * inputDir.y);
                 //Vector3 newVelocity = new Vector3(0, 300 * distance, 0);
                 ball.GetComponent<Rigidbody>().velocity = newVelocity;
-                /*ball.GetComponent<BallController>().setStart();
+                ball.GetComponent<BallController>().setStart();
                 ball.GetComponent<BallController>().beenHit = true;
-                */
+                
             }
             else
             {
