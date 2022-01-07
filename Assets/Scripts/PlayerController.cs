@@ -6,6 +6,8 @@ using MLAPI.Messaging;
 [RequireComponent(typeof(CharacterController), typeof(PlayerInput))]
 public class PlayerController : NetworkBehaviour
 {
+    public bool isRev = false;
+
     // Component
     private CharacterController controller;
     private Animator animator;
@@ -20,7 +22,6 @@ public class PlayerController : NetworkBehaviour
 
     // Move Variables
     [SerializeField] private float movingSpeed = 150f;
-    [SerializeField] private float rotationSpeed = 16f;
 
     // Gravity Variables
     private float gravityValue = -6f;
@@ -83,6 +84,7 @@ public class PlayerController : NetworkBehaviour
 
             // get the value from the joystick
             Vector2 input = moveAction.ReadValue<Vector2>().normalized;
+            if (isRev) input = -input;
             if ((input.x != 0 || input.y != 0) && !isJumping) run = true;
 
             // move the player
@@ -95,7 +97,8 @@ public class PlayerController : NetworkBehaviour
             if (!isJumping && isPlayerGrounded) {
                 float degree = Mathf.Atan2(input.x, input.y) * (180 / Mathf.PI);
                 Quaternion targetRotation = Quaternion.Euler(0, degree, 0);
-                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+                //transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+                transform.rotation = targetRotation;
             }
 
             // press jump button
@@ -116,6 +119,7 @@ public class PlayerController : NetworkBehaviour
 
             if (hitAction.WasPerformedThisFrame()) {
                 hitDirection = hitAction.ReadValue<Vector2>();
+                if (isRev) hitDirection = -hitDirection;
             }
 
             if (hitAction.WasReleasedThisFrame()) {

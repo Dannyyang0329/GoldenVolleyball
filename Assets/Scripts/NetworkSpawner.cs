@@ -11,59 +11,67 @@ public class NetworkSpawner : NetworkBehaviour
 
     public NetworkObject[] prefabs;
 
-    public NetworkVariableInt playerIndex;
+    public int playerNumber;
 
     private void Start() {
         if(IsLocalPlayer) {
             SpawnPlayer();
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
     public void SpawnPlayer() 
     {
         ulong id = NetworkManager.Singleton.LocalClientId;
+        playerNumber = (int) id / 2;
 
         if (NetworkManager.Singleton.IsServer) {
-            Debug.Log("Server : " + SelectCharacterController.selectedPlayer.Value);
-
-            NetworkObject obj = Instantiate(prefabs[3], spawnPoint[4], Quaternion.identity);
+            // Spawn ball
+            NetworkObject obj = Instantiate(prefabs[6], spawnPoint[4], Quaternion.identity);
             obj.SpawnWithOwnership(NetworkManager.Singleton.LocalClientId);
 
-            Spawning(id, SelectCharacterController.selectedPlayer.Value);
+            // Spawn player
+            Spawning(id, SelectCharacterController.selectedPlayer.Value, playerNumber);
+
+            Debug.Log("Server : " + SelectCharacterController.selectedPlayer.Value);
         }
         else{
-            Debug.Log("Client : " + SelectCharacterController.selectedPlayer.Value);
+            // Spawn player
+            SpawningServerRpc(id, SelectCharacterController.selectedPlayer.Value, playerNumber);
 
-            SpawningServerRpc(id, SelectCharacterController.selectedPlayer.Value);
+            Debug.Log("Client : " + SelectCharacterController.selectedPlayer.Value);
         }
     }
 
     [ServerRpc]
-    void SpawningServerRpc(ulong id, string characterStr) {
-        Spawning(id, characterStr);
+    void SpawningServerRpc(ulong id, string characterStr, int point) {
+        Spawning(id, characterStr, point);
     }
 
 
-    void Spawning(ulong id, string name) {
+    void Spawning(ulong id, string name, int point) {
         NetworkObject obj = null;
+        Debug.Log(point);
+
+        bool isRev = (point % 2 == 1);
 
         if(name == "Mario") {
-            obj = Instantiate(prefabs[0], spawnPoint[0], Quaternion.identity);
+            if(!isRev) obj = Instantiate(prefabs[0], spawnPoint[point], Quaternion.identity);
+            else obj = Instantiate(prefabs[3], spawnPoint[point], Quaternion.identity);
+
             obj.SpawnAsPlayerObject(id);
         }
         else if(name == "Luigi") {
-            obj = Instantiate(prefabs[1], spawnPoint[1], Quaternion.identity);
+            if(!isRev) obj = Instantiate(prefabs[1], spawnPoint[point], Quaternion.identity);
+            else obj = Instantiate(prefabs[4], spawnPoint[point], Quaternion.identity);
+
             obj.SpawnAsPlayerObject(id);
         }
         else if(name == "Toad") {
-            obj = Instantiate(prefabs[2], spawnPoint[2], Quaternion.identity);
+            if(!isRev) obj = Instantiate(prefabs[2], spawnPoint[point], Quaternion.identity);
+            else obj = Instantiate (prefabs[5], spawnPoint[point], Quaternion.identity);
+
             obj.SpawnAsPlayerObject(id);
         }
-    }
-
-    int GetPlayerCount() {
-        // not finish
-        return 0; 
     }
 }
