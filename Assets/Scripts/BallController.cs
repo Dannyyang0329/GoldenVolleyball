@@ -14,6 +14,7 @@ public class BallController : MonoBehaviour
     int lastWinner;
     float resetSecond;
     Text resetTime;
+    Text showScore;
     GameObject endGamePanel;
 
     // Start is called before the first frame update
@@ -26,6 +27,8 @@ public class BallController : MonoBehaviour
         transform.position = new Vector3(0, 0, -200);
         canHit = true;
         resetTime = GameObject.Find("ResetTime").GetComponent<Text>();
+        showScore = GameObject.Find("Score").GetComponent<Text>();
+        showScore.text = string.Format("{0:00}", p1Score) + " : " + string.Format("{0:00}", p2Score);
         endGamePanel = GameObject.Find("EndGame");
         resetTime.enabled = false;
         endGamePanel.SetActive(false); ;
@@ -101,7 +104,7 @@ public class BallController : MonoBehaviour
             p2Score++;
             lastWinner = 2;
         }
-
+        showScore.text = string.Format("{0:00}", p1Score) + " : " + string.Format("{0:00}", p2Score);
         if (p1Score == 25 || p2Score == 25)
         {
             Time.timeScale = 0;
@@ -131,7 +134,7 @@ public class BallController : MonoBehaviour
             p1Score++;
             lastWinner = 1;
         }
-
+        showScore.text = string.Format("{0:00}", p1Score) + " : " + string.Format("{0:00}", p2Score);
         if (p1Score == 25 || p2Score == 25)
         {
             Time.timeScale = 0;
