@@ -16,8 +16,9 @@ public class BallController : MonoBehaviour
     Text resetTime;
     Text showScore;
     GameObject endGamePanel;
+    GameObject winView;
+    GameObject loseView;
 
-    // Start is called before the first frame update
     void Start()
     {
         p1Score = 0;
@@ -26,15 +27,21 @@ public class BallController : MonoBehaviour
         lastWinner = 1;
         transform.position = new Vector3(0, 0, -200);
         canHit = true;
-        resetTime = GameObject.Find("ResetTime").GetComponent<Text>();
+
         showScore = GameObject.Find("Score").GetComponent<Text>();
         showScore.text = string.Format("{0:00}", p1Score) + " : " + string.Format("{0:00}", p2Score);
-        endGamePanel = GameObject.Find("EndGame");
+
+        resetTime = GameObject.Find("ResetTime").GetComponent<Text>();
         resetTime.enabled = false;
+
+        endGamePanel = GameObject.Find("EndGame");
+
+        winView = GameObject.Find("Win");
+        loseView = GameObject.Find("Lose");
+
         endGamePanel.SetActive(false); ;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (resetTime.enabled)
@@ -104,8 +111,9 @@ public class BallController : MonoBehaviour
             p2Score++;
             lastWinner = 2;
         }
+
         showScore.text = string.Format("{0:00}", p1Score) + " : " + string.Format("{0:00}", p2Score);
-        if (p1Score == 25 || p2Score == 25)
+        if (p1Score == 15 || p2Score == 15)
         {
             Time.timeScale = 0;
             endGame();
@@ -113,8 +121,8 @@ public class BallController : MonoBehaviour
         else
         {
             //GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-            Invoke("setPosition", 6);
-            resetSecond = 11;
+            Invoke("setPosition", 5);
+            resetSecond = 6;
             resetTime.text = "Reset Time : " + string.Format("{0:00}", 0) + " : " + string.Format("{0:00}", (int)resetSecond);
             resetTime.enabled = true;
         }
@@ -134,8 +142,9 @@ public class BallController : MonoBehaviour
             p1Score++;
             lastWinner = 1;
         }
+
         showScore.text = string.Format("{0:00}", p1Score) + " : " + string.Format("{0:00}", p2Score);
-        if (p1Score == 25 || p2Score == 25)
+        if (p1Score == 15 || p2Score == 15)
         {
             Time.timeScale = 0;
             endGame();
@@ -143,8 +152,8 @@ public class BallController : MonoBehaviour
         else
         {
             //GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-            Invoke("setPosition", 10);
-            resetSecond = 11;
+            Invoke("setPosition", 5);
+            resetSecond = 6;
             resetTime.text = "Reset Time : " + string.Format("{0:00}", 0) + " : " + string.Format("{0:00}", (int)resetSecond);
             resetTime.enabled = true;
         }
@@ -178,5 +187,18 @@ public class BallController : MonoBehaviour
     private void endGame()
     {
         endGamePanel.SetActive(true);
+
+        if(GameManager.curViewTeam == 1) {
+            showScore.text = p1Score.ToString();
+
+            if(lastWinner == 1) loseView.SetActive(false);
+            else loseView.SetActive(false);
+        }
+        else {
+            showScore.text = p2Score.ToString();
+
+            if(lastWinner == 2) loseView.SetActive(false);
+            else loseView.SetActive(false);
+        }
     }
 }
