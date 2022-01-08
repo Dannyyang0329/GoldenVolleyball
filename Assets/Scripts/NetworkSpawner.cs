@@ -55,7 +55,6 @@ public class NetworkSpawner : NetworkBehaviour
 
     void Spawning(ulong id, string name, int point) {
         NetworkObject obj = null;
-        Debug.Log(point);
 
         bool isRev = (point % 2 == 1);
 

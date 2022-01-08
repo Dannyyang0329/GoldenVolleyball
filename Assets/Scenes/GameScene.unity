@@ -2278,7 +2278,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.010599196, y: 0.95718026, z: -0.0353333, w: 0.2871326}
+  m_LocalRotation: {x: 0.010599196, y: 0.9571803, z: -0.0353333, w: 0.28713262}
   m_LocalPosition: {x: 366, y: 350, z: 500}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2717,7 +2717,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Reset Time : 12:34'
+  m_Text: ' '
 --- !u!222 &1153709880
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -41319,7 +41319,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752517167}
-  m_LocalRotation: {x: 0.010599196, y: 0.95718026, z: -0.0353333, w: 0.2871326}
+  m_LocalRotation: {x: 0.010599196, y: 0.9571803, z: -0.0353333, w: 0.28713262}
   m_LocalPosition: {x: 366, y: 350, z: 500}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

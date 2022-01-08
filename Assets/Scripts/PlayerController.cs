@@ -195,7 +195,7 @@ public class PlayerController : NetworkBehaviour
             }
             else
             {
-                Vector3 newVelocity = new Vector3(2* strength * inputDir.x, -500 * distance, 2 * strength * inputDir.y);
+                Vector3 newVelocity = new Vector3(1.3f * strength * inputDir.x, -350 * distance, 1.3f * strength * inputDir.y);
                 ball.GetComponent<Rigidbody>().velocity = newVelocity;
             }
         }
