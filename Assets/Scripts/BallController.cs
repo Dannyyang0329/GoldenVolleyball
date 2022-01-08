@@ -42,6 +42,8 @@ public class BallController : MonoBehaviour
         resetTime.enabled = false;
 
         endGamePanel = GameObject.Find("EndGame");
+        winView = GameObject.Find("Win");
+        loseView = GameObject.Find("Lose");
         endGamePanel.SetActive(false); ;
     }
 
