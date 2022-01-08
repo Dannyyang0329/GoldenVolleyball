@@ -153,11 +153,11 @@ public class BallController : NetworkBehaviour
 
     private void displayScore(int p1Score, int p2Score) {
         if(GameManager.curViewTeam == 1) {
-            showScore = GameObject.Find("Score").GetComponent<Text>();
+            if(!showScore) showScore = GameObject.Find("Score").GetComponent<Text>();
             showScore.text = string.Format("{0:00}", p1Score) + " : " + string.Format("{0:00}", p2Score);
         }
         else {
-            showScore = GameObject.Find("Score").GetComponent<Text>();
+            if(!showScore) showScore = GameObject.Find("Score").GetComponent<Text>();
             showScore.text = string.Format("{0:00}", p2Score) + " : " + string.Format("{0:00}", p1Score);
         }
     }
@@ -195,15 +195,9 @@ public class BallController : NetworkBehaviour
             transform.position = new Vector3(0, 100, 200);
         }
         canHit = true;
-        Debug.Log("reset");
     }
 
     public void setStart()
-    {
-        Invoke("openJudge", Time.deltaTime * 20);
-    }
-
-    private void openJudge()
     {
         startJudge = true;
     }
@@ -227,7 +221,7 @@ public class BallController : NetworkBehaviour
     }
 
     private void displayCountdown(float resetSecond) {
-        resetTime = GameObject.Find("ResetTime").GetComponent<Text>();
+        if(!resetTime) resetTime = GameObject.Find("ResetTime").GetComponent<Text>();
         resetTime.text = "Reset Time : " + string.Format("{0:00}", 0) + " : " + string.Format("{0:00}", (int)resetSecond);
     }
 
@@ -237,13 +231,6 @@ public class BallController : NetworkBehaviour
 
         displayCountdown(resetSec);
     }
-
-    /*
-    [ClientRpc]
-    void SetResetSecondClientRpc() {
-        resetSecond = 6;
-    }
-    */
 
     [ClientRpc]
     void DisplayScoreClientRpc(int p1Score, int p2Score) {

@@ -9,23 +9,26 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : NetworkBehaviour
 {
+    public static int curViewTeam;
+    
     public GameObject multiPlayerUI;
 
     public Animator roundCamAnim;
     public CinemachineVirtualCamera roundCam;
 
-    public string ipAddress = "127.0.0.1";
     private UNetTransport transport;
+    public string ipAddress = "127.0.0.1";
 
-    public static int curViewTeam;
-
-    private void Start() {
-
+    private void Start() 
+    {
         GameObject.FindObjectOfType<AudioManager>().Play("Bgm");
         multiPlayerUI.SetActive(true);
+
+        Invoke("SwitchCam", 10);
     }
 
-    public void Game_Host() {
+    public void Game_Host() 
+    {
         transport = NetworkManager.Singleton.GetComponent<UNetTransport>();
         transport.ConnectAddress = ipAddress;
 
@@ -36,7 +39,8 @@ public class GameManager : NetworkBehaviour
         roundCamAnim.SetTrigger("Start");
     }
 
-    public void Game_Client() {
+    public void Game_Client() 
+    {
         transport = NetworkManager.Singleton.GetComponent<UNetTransport>();
         transport.ConnectAddress = ipAddress;
 
@@ -47,14 +51,13 @@ public class GameManager : NetworkBehaviour
         roundCamAnim.SetTrigger("Start");
     }
 
-    public void SetIpAddress(string newAddress) {
+    public void SetIpAddress(string newAddress) 
+    {
         this.ipAddress = newAddress;
     }
 
-    private void Update() {
-        if(roundCam.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathPosition >= 20) {
-            roundCam.Priority = 0;
-        }      
+    private void SwitchCam() {
+        roundCam.Priority = 0;
     }
 
     public void loadScene_meun() {

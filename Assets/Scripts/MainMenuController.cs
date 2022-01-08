@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour {
-    public static bool isSingle = true;
+    public static bool isSingle = false;
 
     public AudioManager audioManager;
 
@@ -13,11 +13,6 @@ public class MainMenuController : MonoBehaviour {
 
     public void Quit() {
         Application.Quit();
-    }
-
-    public void SinglePlayer() {
-        GetComponent<LevelLoader>().LoadNextScene1();
-        isSingle = true;
     }
 
     public void MultiPlayer() {

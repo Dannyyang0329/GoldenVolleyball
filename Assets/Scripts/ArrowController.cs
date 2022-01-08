@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class ArrowController : MonoBehaviour
 {
-    GameObject ball;
+    public Transform ball;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        ball = GameObject.Find("volleyball");
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(ball.transform.position.x, 18.5f, ball.transform.position.z);
+        Vector3 groundPos = new Vector3(ball.position.x, 18.5f, ball.position.z);
+        transform.position = groundPos;
     }
 }

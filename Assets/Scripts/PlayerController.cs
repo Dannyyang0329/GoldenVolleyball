@@ -64,11 +64,6 @@ public class PlayerController : NetworkBehaviour
         jumpAction = playerInput.actions["Jump"];
         hitAction = playerInput.actions["Hit"];
 
-        /*cine_camera = GameObject.Find("Camera");
-        cine_camera.GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = transform.GetChild(0);
-        cine_camera.GetComponent<Cinemachine.CinemachineVirtualCamera>().LookAt = transform.GetChild(0);
-        */
-
         ball = GameObject.FindGameObjectWithTag("Ball").transform.GetChild(0).gameObject;
     }
 
@@ -89,15 +84,12 @@ public class PlayerController : NetworkBehaviour
 
             // move the player
             Vector3 move = new Vector3(input.x, 0, input.y).normalized;
-//            if (isPlayerGrounded && !isJumping) {
-                controller.Move(move * movingSpeed * Time.deltaTime);
-//            }
+            controller.Move(move * movingSpeed * Time.deltaTime);
 
             // rotate the player
             if (!isJumping && isPlayerGrounded) {
                 float degree = Mathf.Atan2(input.x, input.y) * (180 / Mathf.PI);
                 Quaternion targetRotation = Quaternion.Euler(0, degree, 0);
-                //transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
                 transform.rotation = targetRotation;
             }
 
@@ -108,14 +100,6 @@ public class PlayerController : NetworkBehaviour
                 audioManager.Play("Jump");
                 jump = true;
             }
-            /*
-            // press hit button
-            if (hitAction.triggered)
-            {
-                if (isJumping) smash = true;
-                else hit = true;
-            }
-            */
 
             if (hitAction.WasPerformedThisFrame()) {
                 hitDirection = hitAction.ReadValue<Vector2>();
@@ -142,21 +126,12 @@ public class PlayerController : NetworkBehaviour
         }
     }
 
-    /*
-    void setupJumpVariables()
-    {
-        float timeToApex = maxJumpTime / 2 / Time.deltaTime;
-
-        initialJumpVelocity = (2 * maxJumpHeight) / timeToApex;
-        gravityValue = -initialJumpVelocity / timeToApex;
-    }
-    */
-
     void detectGrounded() 
     {
         isPlayerGrounded = controller.isGrounded;
         if (isPlayerGrounded) isJumping = false;
     }
+
     void handleGravity()
     {
         if (isPlayerGrounded) jumpMovement.y = groundedGravity;
@@ -167,27 +142,28 @@ public class PlayerController : NetworkBehaviour
     [ServerRpc]
     void HitServerRpc(Vector2 inputDir) 
     {
-        Debug.Log("Client hit");
         PlayerHit(inputDir);
     }
 
     void PlayerHit(Vector2 inputDir) {
-        Debug.Log("Hit success");
         float ballx = ball.transform.position.x;
         float bally = ball.transform.position.y;
         float ballz = ball.transform.position.z;
         float distance = Mathf.Sqrt(Mathf.Pow(inputDir.x,2)+Mathf.Pow(inputDir.y,2));
 
-        if (ballx > transform.position.x - 150 && ballx < transform.position.x + 150 &&
-            bally > transform.position.y - 150 && bally < transform.position.y + 150 &&
-            ballz > transform.position.z - 150 && ballz < transform.position.z + 150 &&
+        float curX = transform.position.x;
+        float curY = transform.position.y;
+        float curZ = transform.position.z;
+
+        if (ballx > curX - 150 && ballx < curX + 150 &&
+            bally > curY - 150 && bally < curY + 150 &&
+            ballz > curZ - 180 && ballz < curZ + 180 &&
             ball.GetComponent<BallController>().canHit)
         {
             audioManager.Play("Hit");
             if (!isJumping)
             {
                 Vector3 newVelocity = new Vector3(strength * inputDir.x, 300 * distance, strength * inputDir.y);
-                //Vector3 newVelocity = new Vector3(0, 300 * distance, 0);
                 ball.GetComponent<Rigidbody>().velocity = newVelocity;
                 ball.GetComponent<BallController>().setStart();
                 ball.GetComponent<BallController>().beenHit = true;
@@ -199,5 +175,4 @@ public class PlayerController : NetworkBehaviour
             }
         }
     }
-
 }
