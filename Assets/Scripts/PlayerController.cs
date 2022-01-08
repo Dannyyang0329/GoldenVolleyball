@@ -191,11 +191,10 @@ public class PlayerController : NetworkBehaviour
                 ball.GetComponent<Rigidbody>().velocity = newVelocity;
                 ball.GetComponent<BallController>().setStart();
                 ball.GetComponent<BallController>().beenHit = true;
-                
             }
             else
             {
-                Vector3 newVelocity = new Vector3(1.3f * strength * inputDir.x, -350 * distance, 1.3f * strength * inputDir.y);
+                Vector3 newVelocity = new Vector3(2f * strength * inputDir.x, -500 * distance, 2f * strength * inputDir.y);
                 ball.GetComponent<Rigidbody>().velocity = newVelocity;
             }
         }

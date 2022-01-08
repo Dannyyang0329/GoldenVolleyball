@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 426976146991388855}
   - component: {fileID: 426976146991388848}
   - component: {fileID: 426976146991388853}
+  - component: {fileID: 6537180894317113000}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -65,3 +66,20 @@ MonoBehaviour:
   PrefabHashGenerator: GameManager
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
+--- !u!114 &6537180894317113000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426976146991388849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4992d7f5baa2444a398ccda422deee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 0}
+  transitionTime: 1
+  nextSceneName_1: GameScene
+  nextSceneName_2: InitialScene
+  nextSceneName_3: 

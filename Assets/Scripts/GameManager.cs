@@ -5,6 +5,7 @@ using UnityEngine;
 using MLAPI;
 using MLAPI.Transports.UNET;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : NetworkBehaviour
 {
@@ -56,4 +57,25 @@ public class GameManager : NetworkBehaviour
         }      
     }
 
+    public void loadScene_meun() {
+        Disconnect();
+        GetComponent<LevelLoader>().LoadNextScene2();
+    }
+
+    public void loadScene_restart() {
+        Disconnect();
+        GetComponent<LevelLoader>().LoadNextScene1();
+    }
+
+    public void Disconnect() {
+        if (IsHost) {
+            NetworkManager.Singleton.StopHost();
+        }
+        else if (IsClient) {
+            NetworkManager.Singleton.StopClient();
+        }
+        else if (IsServer) {
+            NetworkManager.Singleton.StopServer();
+        }
+    }
 }
