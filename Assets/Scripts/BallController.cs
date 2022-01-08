@@ -5,32 +5,42 @@ using UnityEngine.UI;
 
 public class BallController : MonoBehaviour
 {
+    // judge variables
     int courtNum;
     public bool beenHit = false;
     public bool startJudge;
-    public bool canHit;
+
+    // score variables
     int p1Score;
     int p2Score;
+    Text showScore;
+
+    // reset variables
     int lastWinner;
     float resetSecond;
+    public bool canHit;
     Text resetTime;
-    Text showScore;
+
+    // end game
     GameObject endGamePanel;
 
     // Start is called before the first frame update
     void Start()
     {
+        transform.position = new Vector3(0, 0, -200);
+
         p1Score = 0;
         p2Score = 0;
-        startJudge = false;
-        lastWinner = 1;
-        transform.position = new Vector3(0, 0, -200);
+        
+        displayScore();
+
         canHit = true;
+        startJudge = false;
+
         resetTime = GameObject.Find("ResetTime").GetComponent<Text>();
-        showScore = GameObject.Find("Score").GetComponent<Text>();
-        showScore.text = string.Format("{0:00}", p1Score) + " : " + string.Format("{0:00}", p2Score);
-        endGamePanel = GameObject.Find("EndGame");
         resetTime.enabled = false;
+
+        endGamePanel = GameObject.Find("EndGame");
         endGamePanel.SetActive(false); ;
     }
 
@@ -57,13 +67,16 @@ public class BallController : MonoBehaviour
 
     }
 
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("OutOfCourt")&&startJudge)
+        // invisible wall
+        if (collision.gameObject.CompareTag("OutOfCourt") && startJudge)
         {
             startJudge = false;
             judgeOutWinner();
         }
+        // int the court
         else if (collision.gameObject.CompareTag("Ground") && startJudge)
         {
             startJudge = false;
@@ -73,13 +86,15 @@ public class BallController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("OutOfCourt")&&startJudge)
+        // out of court
+        if (other.gameObject.CompareTag("OutOfCourt") && startJudge)
         {
             startJudge = false;
             judgeOutWinner();
         }
     }
 
+    // out of court
     private void judgeOutWinner()
     {
         Debug.Log("win");
@@ -104,22 +119,11 @@ public class BallController : MonoBehaviour
             p2Score++;
             lastWinner = 2;
         }
-        showScore.text = string.Format("{0:00}", p1Score) + " : " + string.Format("{0:00}", p2Score);
-        if (p1Score == 25 || p2Score == 25)
-        {
-            Time.timeScale = 0;
-            endGame();
-        }
-        else
-        {
-            //GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-            Invoke("setPosition", 6);
-            resetSecond = 11;
-            resetTime.text = "Reset Time : " + string.Format("{0:00}", 0) + " : " + string.Format("{0:00}", (int)resetSecond);
-            resetTime.enabled = true;
-        }
+        displayScore();
+        checkEndGame();
     }
 
+    // in the court
     private void judgeInWinner()
     {
         Debug.Log("win");
@@ -134,17 +138,26 @@ public class BallController : MonoBehaviour
             p1Score++;
             lastWinner = 1;
         }
+        displayScore();
+        checkEndGame();
+    }
+
+    private void displayScore() {
+        showScore = GameObject.Find("Score").GetComponent<Text>();
         showScore.text = string.Format("{0:00}", p1Score) + " : " + string.Format("{0:00}", p2Score);
-        if (p1Score == 25 || p2Score == 25)
+    }
+
+    private void checkEndGame()
+    {
+        if (p1Score == 10 || p2Score == 10)
         {
             Time.timeScale = 0;
             endGame();
         }
         else
         {
-            //GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-            Invoke("setPosition", 10);
-            resetSecond = 11;
+            Invoke("setPosition", 5);
+            resetSecond = 6;
             resetTime.text = "Reset Time : " + string.Format("{0:00}", 0) + " : " + string.Format("{0:00}", (int)resetSecond);
             resetTime.enabled = true;
         }
