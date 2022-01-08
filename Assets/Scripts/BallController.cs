@@ -23,8 +23,9 @@ public class BallController : MonoBehaviour
 
     // end game
     GameObject endGamePanel;
+    GameObject winView;
+    GameObject loseView;
 
-    // Start is called before the first frame update
     void Start()
     {
         transform.position = new Vector3(0, 0, -200);
@@ -44,7 +45,6 @@ public class BallController : MonoBehaviour
         endGamePanel.SetActive(false); ;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (resetTime.enabled)
@@ -191,5 +191,18 @@ public class BallController : MonoBehaviour
     private void endGame()
     {
         endGamePanel.SetActive(true);
+
+        if(GameManager.curViewTeam == 1) {
+            showScore.text = p1Score.ToString();
+
+            if(lastWinner == 1) loseView.SetActive(false);
+            else loseView.SetActive(false);
+        }
+        else {
+            showScore.text = p2Score.ToString();
+
+            if(lastWinner == 2) loseView.SetActive(false);
+            else loseView.SetActive(false);
+        }
     }
 }

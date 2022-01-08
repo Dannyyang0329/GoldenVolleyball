@@ -16,7 +16,11 @@ public class NetworkSpawner : NetworkBehaviour
     private void Start() {
         if(IsLocalPlayer) {
             SpawnPlayer();
-            //Destroy(gameObject);
+
+            if (playerNumber % 2 == 0) GameManager.curViewTeam = 1;
+            else GameManager.curViewTeam = 2;
+
+            Destroy(gameObject);
         }
     }
 

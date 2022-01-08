@@ -16,6 +16,8 @@ public class GameManager : NetworkBehaviour
     public string ipAddress = "127.0.0.1";
     private UNetTransport transport;
 
+    public static int curViewTeam;
+
     private void Start() {
 
         GameObject.FindObjectOfType<AudioManager>().Play("Bgm");
