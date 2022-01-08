@@ -98,7 +98,6 @@ public class BallController : NetworkBehaviour
     // out of court
     private void judgeOutWinner()
     {
-        Debug.Log("win");
         canHit = false;
         if (courtNum == 1 && beenHit) // 2 win
         {
@@ -131,7 +130,6 @@ public class BallController : NetworkBehaviour
     // in the court
     private void judgeInWinner()
     {
-        Debug.Log("win");
         canHit = false;
         if (courtNum == 1) // 2 win
         {
